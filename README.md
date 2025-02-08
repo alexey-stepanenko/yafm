@@ -14,5 +14,8 @@
 КонецПроцедуры
 ```
 <div style="font-family: monospace;">
-    <nobr><span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span> <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span></nobr><br>
+    <nobr>
+      <span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+      <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    </nobr><br>
 </div>
