@@ -13,9 +13,18 @@
 	);
 КонецПроцедуры
 ```
+<pre>
+<span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ
+    </span>
+    <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: blue;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: blue;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+    <span style="color: blue;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
+  </nobr><br>
+</pre>
 <div style="font-family: monospace;">
-    <nobr>
-      <span style="color: red;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
-      <span style="color: green;">LETTER klhklhkjh HKHJKHKJHJK JKHKJKJHKHKJ</span>
-    </nobr><br>
 </div>
