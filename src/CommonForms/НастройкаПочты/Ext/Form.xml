@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИмяОтправителя" id="54">
+			<DataPath>Объект.ИмяОтправителяПочтовогоСообщения</DataPath>
+			<AutofillHint>Email</AutofillHint>
+			<ContextMenu name="ИмяОтправителяКонтекстноеМеню" id="55"/>
+			<ExtendedTooltip name="ИмяОтправителяExtendedTooltip" id="89"/>
+		</InputField>
+		<Pages name="Группа1" id="124">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="125"/>
+			<ChildItems>
+				<Page name="ГруппаНастройкаSMTPСервера" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка SMTP сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка SMTPСервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкаSMTPСервераExtendedTooltip" id="90"/>
+					<ChildItems>
+						<InputField name="АдресSMTPСервера" id="58">
+							<DataPath>Объект.АдресSMTPСервера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес SMTP сервера</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АдресSMTPСервераКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="АдресSMTPСервераExtendedTooltip" id="91"/>
+						</InputField>
+						<InputField name="ПортSMTP" id="60">
+							<DataPath>Объект.ПортSMTP</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>0 - устанавливать порт автоматически</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ContextMenu name="ПортSMTPКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ПортSMTPРасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<CheckBoxField name="SMTPSSL" id="109">
+							<DataPath>Объект.SSLSMTP</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>SSL</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="SMTPSSLКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="SMTPSSLРасширеннаяПодсказка" id="111"/>
+						</CheckBoxField>
+						<InputField name="ПользовательSMTP" id="64">
+							<DataPath>Объект.ПользовательSMTP</DataPath>
+							<ContextMenu name="ПользовательSMTPКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ПользовательSMTPExtendedTooltip" id="94"/>
+						</InputField>
+						<InputField name="ПарольSMTP" id="66">
+							<DataPath>Объект.ПарольSMTP</DataPath>
+							<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ПарольSMTPExtendedTooltip" id="95"/>
+						</InputField>
+						<CheckBoxField name="ТолькоЗащищеннаяАутентификацияSMTP" id="115">
+							<DataPath>Объект.ТолькоЗащищеннаяАутентификацияSMTP</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Защищенная аутентификация</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТолькоЗащищеннаяАутентификацияSMTPКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияSMTPРасширеннаяПодсказка" id="117"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкаPOP3Сервера" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка POP3 сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка POP3 сервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкаPOP3СервераExtendedTooltip" id="96"/>
+					<ChildItems>
+						<InputField name="АдресPOP3Сервера" id="68">
+							<DataPath>Объект.АдресPOP3Сервера</DataPath>
+							<ContextMenu name="АдресPOP3СервераКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="АдресPOP3СервераExtendedTooltip" id="97"/>
+						</InputField>
+						<InputField name="ПортPOP3" id="70">
+							<DataPath>Объект.ПортPOP3</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>0 - устанавливать порт автоматически</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ContextMenu name="ПортPOP3КонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ПортPOP3РасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<CheckBoxField name="POP3SSL" id="112">
+							<DataPath>Объект.SSLPOP3</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>SSL</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="POP3SSLКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="POP3SSLРасширеннаяПодсказка" id="114"/>
+						</CheckBoxField>
+						<InputField name="ПользовательPOP3" id="72">
+							<DataPath>Объект.ПользовательPOP3</DataPath>
+							<ContextMenu name="ПользовательPOP3КонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ПользовательPOP3ExtendedTooltip" id="99"/>
+						</InputField>
+						<InputField name="ПарольPOP3" id="74">
+							<DataPath>Объект.ПарольPOP3</DataPath>
+							<ContextMenu name="ПарольPOP3КонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ПарольPOP3ExtendedTooltip" id="100"/>
+						</InputField>
+						<CheckBoxField name="ТолькоЗащищеннаяАутентификацияPOP3" id="118">
+							<DataPath>Объект.ТолькоЗащищеннаяАутентификацияPOP3</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Защищенная аутентификация</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТолькоЗащищеннаяАутентификацияPOP3КонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияPOP3РасширеннаяПодсказка" id="120"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкаIMAPСервера" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка IMAP сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка IMAPСервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкаIMAPСервераExtendedTooltip" id="101"/>
+					<ChildItems>
+						<InputField name="АдресIMAPСервера" id="81">
+							<DataPath>Объект.АдресIMAPСервера</DataPath>
+							<ContextMenu name="АдресIMAPСервераКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="АдресIMAPСервераExtendedTooltip" id="102"/>
+						</InputField>
+						<InputField name="ПортIMAP" id="83">
+							<DataPath>Объект.ПортIMAP</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>0 - устанавливать порт автоматически</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ContextMenu name="ПортIMAPКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ПортIMAPРасширеннаяПодсказка" id="103"/>
+						</InputField>
+						<CheckBoxField name="IMAPSSL" id="85">
+							<DataPath>Объект.SSLIMAP</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>SSL</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="IMAPSSLКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="IMAPSSLExtendedTooltip" id="106"/>
+						</CheckBoxField>
+						<InputField name="ПользовательIMAP" id="77">
+							<DataPath>Объект.ПользовательIMAP</DataPath>
+							<ContextMenu name="ПользовательIMAPКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ПользовательIMAPExtendedTooltip" id="104"/>
+						</InputField>
+						<InputField name="ПарольIMAP" id="79">
+							<DataPath>Объект.ПарольIMAP</DataPath>
+							<ContextMenu name="ПарольIMAPКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ПарольIMAPExtendedTooltip" id="105"/>
+						</InputField>
+						<CheckBoxField name="ТолькоЗащищеннаяАутентификацияIMAP" id="121">
+							<DataPath>Объект.ТолькоЗащищеннаяАутентификацияIMAP</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Защищенная аутентификация</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТолькоЗащищеннаяАутентификацияIMAPКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="ТолькоЗащищеннаяАутентификацияIMAPРасширеннаяПодсказка" id="123"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<CheckBoxField name="ИспользоватьIMAP" id="87">
+			<DataPath>Объект.ИспользоватьIMAP</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьIMAPКонтекстноеМеню" id="88"/>
+			<ExtendedTooltip name="ИспользоватьIMAPExtendedTooltip" id="107"/>
+		</CheckBoxField>
+		<InputField name="Таймаут" id="56">
+			<DataPath>Объект.ТаймаутИнтернетПочты</DataPath>
+			<ContextMenu name="ТаймаутКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="ТаймаутExtendedTooltip" id="108"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ТекущийПользователь">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

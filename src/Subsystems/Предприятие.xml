@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="0b8e3358-2a9d-4692-a55d-c2f776d98083">
+		<Properties>
+			<Name>Предприятие</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предприятие</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наше предприятие, юридические лица, контрагенты</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодсистемаПредприятие</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ДокументыКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Валюты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Регионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗначенияХарактеристик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Банки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РасчетныеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХранимыеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиТорговогоОборудования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХранилищеВариантовОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеПолнотекстовымПоиском</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АдминистративныйСервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПроведениеДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СписокАктивныхПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалениеПомеченныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеНастройкамиФорм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Характеристики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ВидыХарактеристик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьРасширениеРаботыСФайлами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеАгрегатамиПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВходящиеПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИсходящиеПисьма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПочтовыеВложения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЭлектроннаяПочта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостояниеВходящихПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьРасширениеРаботыСКриптографией</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.Мобильные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МобильныеОтчеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьВидимостьОбъектовЧерезODataAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаPushУведомлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОбщиеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.PushУведомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьPushУведомления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьAPNS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СертификатМобильногоПриложенияIOS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьFCM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КлючCервераОтправителяFCM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЛогинСервисаПередачиPushУведомлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИдентификаторПриложенияWNS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КлючПриложенияWNS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаркерДоступаWNS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьWNS</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Встречи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеСистемойВзаимодействия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПериодПроверкиНеотработанныхЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МобильныеУстройства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиМобильногоУстройства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.БотОфисМенеджер</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

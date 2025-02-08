@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="b0eba545-8d0c-46fa-8b33-7246c9506c54">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ОписанияМодификацийФорм" category="Object">
+				<xr:TypeId>48bf2572-0a11-4680-b594-73196054cbd9</xr:TypeId>
+				<xr:ValueId>80e6e072-7964-43fe-b0a9-ee68bdded0b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ОписанияМодификацийФорм" category="Manager">
+				<xr:TypeId>4ce43a61-c593-439a-8cf6-d21d7c72d26d</xr:TypeId>
+				<xr:ValueId>8c63e5f7-86fe-4463-b1d0-cbb2ec38495a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОписанияМодификацийФорм</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описания модификаций форм</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>ОбщаяФорма_ОбщиеНастройки</Template>
+			<Template>ОбщаяФорма_НастройкиМобильногоУстройства</Template>
+			<Template>ОбщаяФорма_НастройкаПочты</Template>
+			<Template>ОбщаяФорма_ФормаПодбора</Template>
+			<Template>ОбщаяФорма_НастройкаБота</Template>
+			<Template>ОбщаяФорма_НастройкаPushУведомлений</Template>
+			<Template>ОбщаяФорма_ФормаПодбораМобильная</Template>
+			<Template>ОбщаяФорма_Звонок</Template>
+			<Template>ОбщаяФорма_ФормаВыбораПользователяСистемыВзаимодействия</Template>
+			<Template>Справочник_ВходящиеПисьма_ФормаЭлемента</Template>
+			<Template>Справочник_Контрагенты_ФормаЭлемента</Template>
+			<Template>Справочник_Контрагенты_ФормаВыбора</Template>
+			<Template>Справочник_Контрагенты_ФормаСписка</Template>
+			<Template>Справочник_Товары_ФормаСпискаСОстатками</Template>
+			<Template>Справочник_Товары_ФормаЭлемента</Template>
+			<Template>Справочник_Товары_ФормаВыбора</Template>
+			<Template>Справочник_Товары_ФормаСписка</Template>
+			<Template>Справочник_НастройкиТорговогоОборудования_ФормаЭлемента</Template>
+			<Template>Справочник_ХранимыеФайлы_ФормаЭлемента</Template>
+			<Template>Справочник_ХранимыеФайлы_ФормаЗагрузкиФайлов</Template>
+			<Template>Справочник_ХранимыеФайлы_ФормаСписка</Template>
+			<Template>Справочник_ХранимыеФайлы_ФормаПароля</Template>
+			<Template>Справочник_ХранимыеФайлы_СписокСертификатов</Template>
+			<Template>Справочник_ХранимыеФайлы_ФормаВыбора</Template>
+			<Template>Справочник_Валюты_ФормаЭлемента</Template>
+			<Template>Справочник_РасчетныеСчета_ФормаВыбора</Template>
+			<Template>Справочник_РасчетныеСчетаКонтрагентов_ФормаВыбора</Template>
+			<Template>Справочник_Организации_ФормаЭлемента</Template>
+			<Template>Справочник_Пользователи_ФормаЭлемента</Template>
+			<Template>Справочник_ИсходящиеПисьма_ФормаЭлемента</Template>
+			<Template>Справочник_ХранилищеВариантовОтчетов_ФормаСписка</Template>
+			<Template>Справочник_Встречи_ФормаЭлемента</Template>
+			<Template>Справочник_Встречи_ФормаСписка</Template>
+			<Template>Справочник_Встречи_Календарь</Template>
+			<Template>Документ_Заказ_ФормаДокумента</Template>
+			<Template>Документ_Заказ_ФормаСписка</Template>
+			<Template>Документ_ОперацияПоУчетуТоваров_ФормаДокумента</Template>
+			<Template>Документ_Оплата_ФормаДокумента</Template>
+			<Template>Документ_ПоступлениеДенег_ФормаДокумента</Template>
+			<Template>Документ_ПриходТовара_ФормаДокумента</Template>
+			<Template>Документ_ПриходТовара_ФормаСписка</Template>
+			<Template>Документ_РасходТовара_ФормаДокумента</Template>
+			<Template>Документ_РасходТовара_ФормаСписка</Template>
+			<Template>Документ_РасходТовара_ОформлениеДоставки</Template>
+			<Template>ЖурналДокументов_ДокументыПродаж_ФормаСписка</Template>
+			<Template>ЖурналДокументов_ФинансовыеДокументы_ФормаСписка</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

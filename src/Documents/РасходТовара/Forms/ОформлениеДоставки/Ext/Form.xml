@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="КомандыФормыДоставки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды формы доставки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды формы доставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КомандыФормыДоставкиExtendedTooltip" id="9"/>
+			<ChildItems>
+				<Button name="Печать" id="6">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ТабличныйДокумент.StandardCommand.Print</CommandName>
+					<ExtendedTooltip name="ПечатьExtendedTooltip" id="10"/>
+				</Button>
+				<Button name="ПечатьСразу" id="5">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ТабличныйДокумент.StandardCommand.PrintImmediately</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ПечатьСразуExtendedTooltip" id="11"/>
+				</Button>
+				<Button name="ПредварительныйПросмотр" id="7">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ТабличныйДокумент.StandardCommand.Preview</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ПредварительныйПросмотрExtendedTooltip" id="12"/>
+				</Button>
+				<Button name="ПараметрыСтраницы" id="8">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ТабличныйДокумент.StandardCommand.PageSetup</CommandName>
+					<ExtendedTooltip name="ПараметрыСтраницыExtendedTooltip" id="13"/>
+				</Button>
+				<Button name="ПечатьПакетаДокументов" id="15">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПечатьПакетаДокументов</CommandName>
+					<ExtendedTooltip name="ПечатьПакетаДокументовРасширеннаяПодсказка" id="16"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<SpreadSheetDocumentField name="ТабличныйДокумент" id="1">
+			<DataPath>ТабличныйДокумент</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка на доставку</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>None</TitleLocation>
+			<CommandSet>
+				<ExcludedCommand>CollapseAllGroups</ExcludedCommand>
+				<ExcludedCommand>ExpandAllGroups</ExcludedCommand>
+				<ExcludedCommand>ShowGroups</ExcludedCommand>
+			</CommandSet>
+			<Width>80</Width>
+			<Height>20</Height>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<SelectionShowMode>WhenActive</SelectionShowMode>
+			<EnableStartDrag>false</EnableStartDrag>
+			<EnableDrag>false</EnableDrag>
+			<ContextMenu name="ТабличныйДокументКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТабличныйДокументExtendedTooltip" id="14"/>
+			<Events>
+				<Event name="OnChangeAreaContent">ТабличныйДокументПриИзмененииСодержимогоОбласти</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТабличныйДокумент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Документ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.РасходТовара</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьПакетаДокументов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать пакета документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать пакета документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПакетаДокументов</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДатаДокумента">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Документ">
+			<Type>
+				<v8:Type>cfg:DocumentRef.РасходТовара</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

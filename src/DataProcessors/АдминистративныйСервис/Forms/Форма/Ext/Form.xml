@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="Форма_КоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="УправлениеНастройкамиФорм" id="3">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>DataProcessor.УправлениеНастройкамиФорм.StandardCommand.Open</CommandName>
+			<TextColor>style:ButtonTextColor</TextColor>
+			<BackColor>style:ButtonBackColor</BackColor>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ExtendedTooltip name="УправлениеНастройкамиФормExtendedTooltip" id="7"/>
+		</Button>
+		<Button name="УправлениеПолнотекстовымПоиском" id="4">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>DataProcessor.УправлениеПолнотекстовымПоиском.StandardCommand.Open</CommandName>
+			<TextColor>style:ButtonTextColor</TextColor>
+			<BackColor>style:ButtonBackColor</BackColor>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ExtendedTooltip name="УправлениеПолнотекстовымПоискомExtendedTooltip" id="8"/>
+		</Button>
+		<Button name="УдалениеПомеченныхОбъектов" id="5">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open</CommandName>
+			<TextColor>style:ButtonTextColor</TextColor>
+			<BackColor>style:ButtonBackColor</BackColor>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ExtendedTooltip name="УдалениеПомеченныхОбъектовExtendedTooltip" id="9"/>
+		</Button>
+		<Button name="УправлениеАгрегатамиПродаж" id="6">
+			<Type>Hyperlink</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>DataProcessor.УправлениеАгрегатамиПродаж.StandardCommand.Open</CommandName>
+			<ExtendedTooltip name="УправлениеАгрегатамиПродажExtendedTooltip" id="10"/>
+		</Button>
+		<Button name="ОчиститьИсторию" id="1">
+			<Type>UsualButton</Type>
+			<SkipOnInput>false</SkipOnInput>
+			<CommandName>Form.Command.ОчиститьИсторию</CommandName>
+			<TextColor>style:ButtonTextColor</TextColor>
+			<BackColor>style:ButtonBackColor</BackColor>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ExtendedTooltip name="ОчиститьИсториюExtendedTooltip" id="11"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АдминистративныйСервис</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОчиститьИсторию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить историю работы пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьИсториюВыполнить</Action>
+		</Command>
+	</Commands>
+</Form>
