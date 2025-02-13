@@ -367,6 +367,7 @@
 			<CommonModule>МФОбработчикЗначенияСтрока</CommonModule>
 			<CommonModule>МФОбработчикЗначенияТаблицаФормы</CommonModule>
 			<CommonModule>МФОбработчикЗначенияЦвет</CommonModule>
+			<CommonModule>МФОбработчикЗначенияЦветПовтИсп</CommonModule>
 			<CommonModule>МФОбработчикЗначенияЧисло</CommonModule>
 			<CommonModule>МФОбработчикЗначенияШрифт</CommonModule>
 			<CommonModule>МФОбработчикСтрокиДействиеКоманды</CommonModule>
@@ -381,7 +382,6 @@
 			<CommonModule>МФОбработчикСтрокиСочетаниеКлавиш</CommonModule>
 			<CommonModule>МФОбработчикСтрокиТипРеквизита</CommonModule>
 			<CommonModule>МФОбработчикСтрокиЦвет</CommonModule>
-			<CommonModule>МФОбработчикСтрокиЦветПовтИсп</CommonModule>
 			<CommonModule>МФОбработчикСтрокиЭлемент</CommonModule>
 			<CommonModule>МФПовтИсп</CommonModule>
 			<CommonModule>МФПолеФормы</CommonModule>
