@@ -367,6 +367,7 @@
 			<CommonModule>МФОбработчикЗначенияСтрока</CommonModule>
 			<CommonModule>МФОбработчикЗначенияТаблицаФормы</CommonModule>
 			<CommonModule>МФОбработчикЗначенияЦвет</CommonModule>
+			<CommonModule>МФОбработчикЗначенияЦветПовтИсп</CommonModule>
 			<CommonModule>МФОбработчикЗначенияЧисло</CommonModule>
 			<CommonModule>МФОбработчикЗначенияШрифт</CommonModule>
 			<CommonModule>МФОбработчикСтрокиДействиеКоманды</CommonModule>

@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикЗначенияЦвет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикЗначенияЧисло</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикЗначенияШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикЗначенияЦветПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
