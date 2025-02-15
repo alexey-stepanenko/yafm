@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="27">
+			<DataPath>Объект.Организация</DataPath>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="30"/>
+			<Events>
+				<Event name="OnChange">ОрганизацияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Номер" id="2">
+			<DataPath>Объект.Number</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НомерКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НомерExtendedTooltip" id="31"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Объект.Date</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ДатаExtendedTooltip" id="32"/>
+		</InputField>
+		<InputField name="СодержаниеОперации" id="12">
+			<DataPath>Объект.СодержаниеОперации</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="СодержаниеОперацииКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="СодержаниеОперацииExtendedTooltip" id="33"/>
+		</InputField>
+		<Pages name="ГруппаТабличныеЧасти" id="25">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаТабличныеЧастиExtendedTooltip" id="34"/>
+			<ChildItems>
+				<Page name="ГруппаТоварныеЗапасы" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товарные запасы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТоварныеЗапасыExtendedTooltip" id="35"/>
+					<ChildItems>
+						<Table name="ТоварныеЗапасы" id="4">
+							<SkipOnInput>false</SkipOnInput>
+							<Width>80</Width>
+							<HeightInTableRows>13</HeightInTableRows>
+							<SelectionMode>SingleRow</SelectionMode>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<AutoAddIncomplete>true</AutoAddIncomplete>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.RegisterRecords.ТоварныеЗапасы</DataPath>
+							<BorderColor>style:BorderColor</BorderColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварныеЗапасыКонтекстноеМеню" id="17"/>
+							<AutoCommandBar name="ТоварныеЗапасыКоманднаяПанель" id="18">
+								<ChildItems>
+									<Button name="ПереключитьАктивность" id="29">
+										<Type>CommandBarButton</Type>
+										<SkipOnInput>false</SkipOnInput>
+										<CommandName>0</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПереключитьАктивностьExtendedTooltip" id="36"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТоварныеЗапасыExtendedTooltip" id="37"/>
+							<SearchStringAddition name="ТоварныеЗапасыСтрокаПоиска" id="44">
+								<AdditionSource>
+									<Item>ТоварныеЗапасы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварныеЗапасыСтрокаПоискаКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="ТоварныеЗапасыСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварныеЗапасыСостояниеПросмотра" id="47">
+								<AdditionSource>
+									<Item>ТоварныеЗапасы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварныеЗапасыСостояниеПросмотраКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="ТоварныеЗапасыСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварныеЗапасыУправлениеПоиском" id="50">
+								<AdditionSource>
+									<Item>ТоварныеЗапасы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварныеЗапасыУправлениеПоискомКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ТоварныеЗапасыУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТоварныеЗапасыНомерСтроки" id="6" DisplayImportance="Low">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="ТоварныеЗапасыНомерСтрокиКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ТоварныеЗапасыНомерСтрокиExtendedTooltip" id="38"/>
+								</LabelField>
+								<InputField name="ТоварныеЗапасыВидДвижения" id="8">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.RecordType</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>5</Width>
+									<Wrap>false</Wrap>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ТоварныеЗапасыВидДвиженияКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ТоварныеЗапасыВидДвиженияExtendedTooltip" id="39"/>
+								</InputField>
+								<CheckBoxField name="ТоварныеЗапасыАктивность" id="7">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Active</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТоварныеЗапасыАктивностьКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТоварныеЗапасыАктивностьExtendedTooltip" id="40"/>
+								</CheckBoxField>
+								<InputField name="ТоварныеЗапасыТовар" id="9">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ТоварныеЗапасыТоварКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ТоварныеЗапасыТоварExtendedTooltip" id="41"/>
+								</InputField>
+								<InputField name="ТоварныеЗапасыСклад" id="10">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ТоварныеЗапасыСкладКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ТоварныеЗапасыСкладExtendedTooltip" id="42"/>
+								</InputField>
+								<InputField name="ТоварныеЗапасыКоличество" id="11">
+									<DataPath>Объект.RegisterRecords.ТоварныеЗапасы.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Wrap>false</Wrap>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ТоварныеЗапасыКоличествоКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТоварныеЗапасыКоличествоExtendedTooltip" id="43"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОперацияПоУчетуТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

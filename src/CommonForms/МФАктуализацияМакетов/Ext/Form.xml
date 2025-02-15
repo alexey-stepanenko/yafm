@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаАктуализироватьМакеты" id="75">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.АктуализироватьМакеты</CommandName>
+				<ExtendedTooltip name="ФормаАктуализироватьМакетыРасширеннаяПодсказка" id="76"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
+			<Events>
+				<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="СтраницаМакетыКИзменению" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макеты к изменению</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница макеты к изменению</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМакетыКИзменениюРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="МакетыКИзменению" id="7">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HeightInTableRows>4</HeightInTableRows>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>МакетыКИзменению</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МакетыКИзменениюКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="МакетыКИзменениюКоманднаяПанель" id="9">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="МакетыКИзменениюУстановитьФлажки" id="65">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.МакетыКИзменениюУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="МакетыКИзменениюУстановитьФлажкиРасширеннаяПодсказка" id="66"/>
+									</Button>
+									<Button name="МакетыКИзменениюСнятьФлажки" id="67">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.МакетыКИзменениюСнятьФлажки</CommandName>
+										<ExtendedTooltip name="МакетыКИзменениюСнятьФлажкиРасширеннаяПодсказка" id="68"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="МакетыКИзменениюРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="МакетыКИзменениюСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>МакетыКИзменению</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКИзменениюСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="МакетыКИзменениюСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МакетыКИзменениюСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>МакетыКИзменению</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКИзменениюСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="МакетыКИзменениюСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МакетыКИзменениюУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>МакетыКИзменению</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКИзменениюУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="МакетыКИзменениюУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">МакетыКИзменениюПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="МакетыКИзменениюФлагВыбора" id="20">
+									<DataPath>МакетыКИзменению.ФлагВыбора</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МакетыКИзменениюФлагВыбораКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="МакетыКИзменениюФлагВыбораРасширеннаяПодсказка" id="22"/>
+								</CheckBoxField>
+								<InputField name="МакетыКИзменениюИмяМакета" id="23">
+									<DataPath>МакетыКИзменению.ИмяМакета</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="МакетыКИзменениюИмяМакетаКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="МакетыКИзменениюИмяМакетаРасширеннаяПодсказка" id="25"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМакетыКУдалению" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макеты к удалению</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница макеты к удалению</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМакетыКУдалениюРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Table name="МакетыКУдалению" id="32">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HeightInTableRows>4</HeightInTableRows>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>МакетыКУдалению</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МакетыКУдалениюКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="МакетыКУдалениюКоманднаяПанель" id="34">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="МакетыКУдалениюУстановитьФлажки" id="69">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.МакетыКУдалениюУстановитьФлажки</CommandName>
+										<ExtendedTooltip name="МакетыКУдалениюУстановитьФлажкиРасширеннаяПодсказка" id="70"/>
+									</Button>
+									<Button name="МакетыКУдалениюСнятьФлажки" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.МакетыКУдалениюСнятьФлажки</CommandName>
+										<ExtendedTooltip name="МакетыКУдалениюСнятьФлажкиРасширеннаяПодсказка" id="72"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="МакетыКУдалениюРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="МакетыКУдалениюСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>МакетыКУдалению</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКУдалениюСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="МакетыКУдалениюСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МакетыКУдалениюСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>МакетыКУдалению</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКУдалениюСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="МакетыКУдалениюСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МакетыКУдалениюУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>МакетыКУдалению</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МакетыКУдалениюУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="МакетыКУдалениюУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">МакетыКУдалениюПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="МакетыКУдалениюФлагВыбора" id="45">
+									<DataPath>МакетыКУдалению.ФлагВыбора</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МакетыКУдалениюФлагВыбораКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="МакетыКУдалениюФлагВыбораРасширеннаяПодсказка" id="47"/>
+								</CheckBoxField>
+								<InputField name="МакетыКУдалениюИмяМакета" id="48">
+									<DataPath>МакетыКУдалению.ИмяМакета</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МакетыКУдалениюИмяМакетаКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="МакетыКУдалениюИмяМакетаРасширеннаяПодсказка" id="50"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаМакеты" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа макеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа макеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМакетыРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<InputField name="МакетИзКонфигурации" id="79">
+					<DataPath>МакетИзКонфигурации</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<Wrap>false</Wrap>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
+					<ContextMenu name="МакетИзКонфигурацииКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="МакетИзКонфигурацииРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="МакетИзРегистра" id="82">
+					<DataPath>МакетИзРегистра</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<Wrap>false</Wrap>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
+					<ContextMenu name="МакетИзРегистраКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="МакетИзРегистраРасширеннаяПодсказка" id="84"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="МакетыКИзменению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ФлагВыбора" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг выбора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяМакета" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МакетИзРегистра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макет из регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МакетИзКонфигурации" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макет из конфигурации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="МакетыКУдалению" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ФлагВыбора" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг выбора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяМакета" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="МакетИзРегистра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макет из регистра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="МакетИзРегистра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия макета из регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МакетИзКонфигурации" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия макета из конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="МакетыКИзменениюСнятьФлажки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МакетыКИзменениюСнятьФлажки</Action>
+		</Command>
+		<Command name="МакетыКИзменениюУстановитьФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к изменению установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МакетыКИзменениюУстановитьФлажки</Action>
+		</Command>
+		<Command name="МакетыКУдалениюСнятьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к удалению снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к удалению снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МакетыКУдалениюСнятьФлажки</Action>
+		</Command>
+		<Command name="МакетыКУдалениюУстановитьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к удалению установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макеты к удалению установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МакетыКУдалениюУстановитьФлажки</Action>
+		</Command>
+		<Command name="АктуализироватьМакеты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализировать макеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализировать макеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АктуализироватьМакеты</Action>
+		</Command>
+	</Commands>
+</Form>

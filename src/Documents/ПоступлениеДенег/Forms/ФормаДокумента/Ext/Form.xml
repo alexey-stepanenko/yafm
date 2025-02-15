@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="16">
+			<DataPath>Объект.Организация</DataPath>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="18"/>
+			<Events>
+				<Event name="OnChange">ОрганизацияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Номер" id="2">
+			<DataPath>Объект.Number</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="НомерКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="НомерExtendedTooltip" id="19"/>
+		</InputField>
+		<InputField name="Дата" id="3">
+			<DataPath>Объект.Date</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ДатаExtendedTooltip" id="20"/>
+		</InputField>
+		<InputField name="Покупатель" id="4">
+			<DataPath>Объект.Покупатель</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ПокупательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПокупательExtendedTooltip" id="21"/>
+		</InputField>
+		<InputField name="РасчетныйСчетПокупателя" id="5">
+			<DataPath>Объект.РасчетныйСчетПокупателя</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<CreateButton>false</CreateButton>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Объект.Покупатель</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="РасчетныйСчетПокупателяКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="РасчетныйСчетПокупателяExtendedTooltip" id="22"/>
+		</InputField>
+		<InputField name="РасчетныйСчет" id="6">
+			<DataPath>Объект.РасчетныйСчет</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<CreateButton>false</CreateButton>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Объект.Организация</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="РасчетныйСчетКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="РасчетныйСчетExtendedTooltip" id="23"/>
+		</InputField>
+		<InputField name="Валюта" id="7">
+			<DataPath>Объект.Валюта</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ВалютаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВалютаExtendedTooltip" id="24"/>
+		</InputField>
+		<InputField name="Сумма" id="8">
+			<DataPath>Объект.Сумма</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="СуммаExtendedTooltip" id="25"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПоступлениеДенег</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.Взаиморасчеты.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

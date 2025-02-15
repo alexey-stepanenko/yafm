@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DocumentJournal uuid="40cc851d-f17c-4c55-bdf9-7f515d434425">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПродаж" category="Selection">
+				<xr:TypeId>9e281186-6359-46a2-b239-387c3eb2bbac</xr:TypeId>
+				<xr:ValueId>b7aca74f-4244-438d-a68a-e68fb0f628f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПродаж" category="List">
+				<xr:TypeId>deac0974-474b-4697-8ec8-660551985d05</xr:TypeId>
+				<xr:ValueId>9614119c-8ca6-4318-8a71-d5ec3862b88c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПродаж" category="Manager">
+				<xr:TypeId>807042d2-11c5-45f1-a596-15fe517ea6ff</xr:TypeId>
+				<xr:ValueId>3a0e27fd-2f01-4edf-9043-c75f0cf8b7a3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПродаж</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы продаж</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыПродаж.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="0c66d3cf-89ed-4b27-9168-18ed579bf858">
+				<Properties>
+					<Name>Покупатель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Покупатель</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара.Attribute.Покупатель</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.Покупатель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="2ca279cf-d457-472d-836b-8fab52b9e006">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.Склад</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="7ed48fae-5ffb-43d4-b6ae-65482bc3f207">
+				<Properties>
+					<Name>Валюта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара.Attribute.Валюта</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.Валюта</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="a7cf9aec-32de-47a6-aba8-7ea3a11217b8">
+				<Properties>
+					<Name>ВидЦен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид цен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара.Attribute.ВидЦен</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.ВидЦен</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="4eb2f896-538b-4e69-abee-93000eff12a2">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходТовара.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="987a9814-f297-4cd4-bb76-55bd6c236d1a">
+				<Properties>
+					<Name>СостояниеЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Заказ.Attribute.СостояниеЗаказа</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

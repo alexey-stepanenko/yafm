@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="Форма_КоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Товар" id="2">
+			<DataPath>Запись.Объект</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="Товар_КонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТоварExtendedTooltip" id="8"/>
+		</InputField>
+		<InputField name="ВидХарактеристики" id="3">
+			<DataPath>Запись.ВидХарактеристики</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ContextMenu name="ВидХарактеристики_КонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВидХарактеристикиExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Значение" id="4">
+			<DataPath>Запись.Значение</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<Wrap>false</Wrap>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Запись.ВидХарактеристики</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<BorderColor>style:BorderColor</BorderColor>
+			<TypeLink>
+				<xr:DataPath>Запись.ВидХарактеристики</xr:DataPath>
+				<xr:LinkItem>0</xr:LinkItem>
+			</TypeLink>
+			<ContextMenu name="Значение_КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ЗначениеExtendedTooltip" id="10"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.Характеристики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

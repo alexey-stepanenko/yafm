@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="97888342-2969-4ab1-8923-04ef0c818e49">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УдалениеПомеченныхОбъектов" category="Object">
+				<xr:TypeId>efd59291-2a3e-41b3-be5f-e6dd99af7d3c</xr:TypeId>
+				<xr:ValueId>b4762ef6-c5fb-4f33-b6d0-30e647e413e6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УдалениеПомеченныхОбъектов" category="Manager">
+				<xr:TypeId>97461bd8-61a3-479a-a3bc-857a32c2ac9d</xr:TypeId>
+				<xr:ValueId>f03298a5-19e9-4f81-8d5a-85c52a346c3e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УдалениеПомеченныхОбъектов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных объектов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Поиск и удаление объектов, помеченных на удаление</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.УдалениеПомеченныхОбъектов.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОсновнаяФорма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

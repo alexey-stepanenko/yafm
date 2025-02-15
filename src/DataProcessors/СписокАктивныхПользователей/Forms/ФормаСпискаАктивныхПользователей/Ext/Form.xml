@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Активные пользователи</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Button name="ЖурналРегистрации" id="16">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.ЖурналРегистрации</CommandName>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="29"/>
+				</Button>
+				<Button name="РаботаПользователя" id="17">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.РаботаПользователя</CommandName>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="РаботаПользователяРасширеннаяПодсказка" id="30"/>
+				</Button>
+				<Button name="Обновить" id="18">
+					<Type>CommandBarButton</Type>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<TextColor>style:ButtonTextColor</TextColor>
+					<BackColor>style:ButtonBackColor</BackColor>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<ButtonGroup name="ГруппаСортировки" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сортировки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="ГруппаСортировкиРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Button name="СортировкаПоВозрастанию1" id="26">
+							<Type>CommandBarButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.СортировкаПоВозрастанию</CommandName>
+							<TextColor>style:ButtonTextColor</TextColor>
+							<BackColor>style:ButtonBackColor</BackColor>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ExtendedTooltip name="СортировкаПоВозрастанию1РасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="СортировкаПоУбыванию1" id="27">
+							<Type>CommandBarButton</Type>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.СортировкаПоУбыванию</CommandName>
+							<TextColor>style:ButtonTextColor</TextColor>
+							<BackColor>style:ButtonBackColor</BackColor>
+							<BorderColor>style:BorderColor</BorderColor>
+							<ExtendedTooltip name="СортировкаПоУбыванию1РасширеннаяПодсказка" id="33"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</CommandBar>
+		<Table name="СписокПользователей" id="2">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<Width>80</Width>
+			<HeightInTableRows>4</HeightInTableRows>
+			<SelectionMode>SingleRow</SelectionMode>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>СписокПользователей</DataPath>
+			<RowPictureDataPath>СписокПользователей.НомерРисункаПользователя</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КоллекцияВидыАктивныхПользователей</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<BorderColor>style:BorderColor</BorderColor>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокПользователейКонтекстноеМеню" id="3">
+				<ChildItems>
+					<Button name="РаботаПользователя1" id="20">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.РаботаПользователя</CommandName>
+						<TextColor>style:ButtonTextColor</TextColor>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="РаботаПользователя1РасширеннаяПодсказка" id="34"/>
+					</Button>
+					<Button name="Обновить1" id="21">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<TextColor>style:ButtonTextColor</TextColor>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="Обновить1РасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="СортировкаПоВозрастанию" id="24">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.СортировкаПоВозрастанию</CommandName>
+						<TextColor>style:ButtonTextColor</TextColor>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="СортировкаПоВозрастаниюРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="СортировкаПоУбыванию" id="25">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.СортировкаПоУбыванию</CommandName>
+						<TextColor>style:ButtonTextColor</TextColor>
+						<BackColor>style:ButtonBackColor</BackColor>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ExtendedTooltip name="СортировкаПоУбываниюРасширеннаяПодсказка" id="37"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="23"/>
+			<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="38"/>
+			<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="39">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="42">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="45">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Пользователь" id="4">
+					<DataPath>СписокПользователей.ИмяПользователя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="Приложение" id="8">
+					<DataPath>СписокПользователей.Приложение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="ПриложениеКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПриложениеРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="НачалоРаботы" id="10">
+					<DataPath>СписокПользователей.НачалоРаботы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="НачалоРаботыКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="НачалоРаботыРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="Компьютер" id="12">
+					<DataPath>СписокПользователей.Компьютер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КомпьютерКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КомпьютерРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="Сеанс" id="14">
+					<DataPath>СписокПользователей.Сеанс</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="СеансКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СеансРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelField name="КоличествоАктивныхПользователей" id="6">
+			<DataPath>КоличествоАктивныхПользователей</DataPath>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<ContextMenu name="КоличествоАктивныхПользователейКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="КоличествоАктивныхПользователейРасширеннаяПодсказка" id="53"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СписокАктивныхПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокПользователей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерРисункаПользователя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер рисунка пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пользователь" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Приложение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачалоРаботы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало работы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Компьютер" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сеанс" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>7</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользователя" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КоличествоАктивныхПользователей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКолонкиСортировки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя колонки сортировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаправлениеСортировки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направление сортировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЖурналРегистрации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть журнал регистрации событий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EventLog</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьЖурналРегистрации</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">СписокПользователей</AssociatedTableElementId>
+		</Command>
+		<Command name="РаботаПользователя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.EventLogByUser</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьЖурналРегистрацииПоПользователю</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">СписокПользователей</AssociatedTableElementId>
+		</Command>
+		<Command name="Обновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+R</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьВыполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СортировкаПоВозрастанию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка по возрастанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка по возрастанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортироватьПоВозрастанию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СортировкаПоУбыванию" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка по убыванию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка по убыванию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListDesc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортироватьПоУбыванию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

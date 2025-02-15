@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="Catalog.Организации.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Банки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ЗначенияХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Регионы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Встречи.Command.ОткрытьКалендарь">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Встречи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Характеристики.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ХранимыеФайлы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.НастройкиТорговогоОборудования.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ХранилищеВариантовОтчетов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.РасчетныеСчета.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Банки.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Характеристики.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ЗначенияХарактеристик.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.РасчетныеСчета.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Регионы.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ХранимыеФайлы.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УправлениеАгрегатамиПродаж.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УправлениеПолнотекстовымПоиском.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.Организации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.Характеристики.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ХранимыеФайлы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.НастройкиТорговогоОборудования.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ХранилищеВариантовОтчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.РасчетныеСчета.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.Организации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Catalog.Банки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВходящиеПисьма.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ИсходящиеПисьма.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ЗначенияХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыЦен.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Регионы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Встречи.Command.ОткрытьКалендарь">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Встречи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.МобильныеУстройства.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.Характеристики.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ХранимыеФайлы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.НастройкиТорговогоОборудования.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ХранилищеВариантовОтчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.РасчетныеСчета.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СписокАктивныхПользователей.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЖурналРегистрации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.НастройкаПочты.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкиПользователя.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОбщиеНастройки">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроведениеДокументов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеАгрегатамиПродаж.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеНастройкамиФорм.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПолнотекстовымПоиском.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеСистемойВзаимодействия.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьРасширениеРаботыСФайлами">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьРасширениеРаботыСКриптографией">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АдминистративныйСервис.Command.АдминистративныйСервис">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьВидимостьОбъектовЧерезODataAPI">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.НастройкаPushУведомлений.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЭлектроннаяПочта.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.НастройкиМобильногоУстройства.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

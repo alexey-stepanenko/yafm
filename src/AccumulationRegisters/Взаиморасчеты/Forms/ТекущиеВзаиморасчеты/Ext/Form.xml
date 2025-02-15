@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Обновить" id="4">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="16"/>
+			</Button>
+			<Button name="Справка" id="5">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="СправкаExtendedTooltip" id="17"/>
+			</Button>
+			<Button name="Настроить" id="9">
+				<Type>CommandBarButton</Type>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<TextColor>style:ButtonTextColor</TextColor>
+				<BackColor>style:ButtonBackColor</BackColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="НастроитьExtendedTooltip" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаОстатков" id="6">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>false</SkipOnInput>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Width>40</Width>
+			<HeightInTableRows>4</HeightInTableRows>
+			<SelectionMode>SingleRow</SelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаОстатков</DataPath>
+			<BorderColor>style:BorderColor</BorderColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОстатковКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="ТаблицаОстатковКоманднаяПанель" id="11"/>
+			<ExtendedTooltip name="ТаблицаОстатковExtendedTooltip" id="19"/>
+			<SearchStringAddition name="ТаблицаОстатковСтрокаПоиска" id="24">
+				<AdditionSource>
+					<Item>ТаблицаОстатков</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОстатковСтрокаПоискаКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ТаблицаОстатковСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОстатковСостояниеПросмотра" id="27">
+				<AdditionSource>
+					<Item>ТаблицаОстатков</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОстатковСостояниеПросмотраКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ТаблицаОстатковСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОстатковУправлениеПоиском" id="30">
+				<AdditionSource>
+					<Item>ТаблицаОстатков</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОстатковУправлениеПоискомКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="ТаблицаОстатковУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ТаблицаОстатковВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТаблицаОстатковКонтрагент" id="7">
+					<DataPath>ТаблицаОстатков.Контрагент</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>8</Width>
+					<ContextMenu name="ТаблицаОстатковКонтрагентКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ТаблицаОстатковКонтрагентExtendedTooltip" id="20"/>
+				</LabelField>
+				<LabelField name="ТаблицаОстатковВалюта" id="8">
+					<DataPath>ТаблицаОстатков.Валюта</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>5</Width>
+					<ContextMenu name="ТаблицаОстатковВалютаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ТаблицаОстатковВалютаExtendedTooltip" id="21"/>
+				</LabelField>
+				<LabelField name="ТаблицаОстатковНашДолг" id="2">
+					<DataPath>ТаблицаОстатков.НашДолг</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>6</Width>
+					<ContextMenu name="ТаблицаОстатковНашДолгКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ТаблицаОстатковНашДолгExtendedTooltip" id="22"/>
+				</LabelField>
+				<LabelField name="ТаблицаОстатковДолгНам" id="3">
+					<DataPath>ТаблицаОстатков.ДолгНам</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>6</Width>
+					<ContextMenu name="ТаблицаОстатковДолгНамКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаОстатковДолгНамExtendedTooltip" id="23"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаОстатков" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Контрагент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+					<FunctionalOptions>
+						<Item>FunctionalOption.ВалютныйУчет</Item>
+					</FunctionalOptions>
+				</Column>
+				<Column name="НашДолг" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наш долг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДолгНам" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Долг нам</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьВыполнить</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>FilterCriterion.ДокументыКонтрагента.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.РасчетныеСчетаКонтрагентов.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>Document.Оплата.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.ПоступлениеДенег.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.ПриходТовара.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.РасходТовара.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

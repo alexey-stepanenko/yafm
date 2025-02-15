@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление обсуждениями</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Page name="СтраницаОтменитьРегистрацию" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отменить регистрацию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отменить регистрацию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОтменитьРегистрациюРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<CheckBoxField name="ПодтверждениеОтключения" id="36">
+							<DataPath>ПодтверждениеОтключения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПодтверждениеОтключенияКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ПодтверждениеОтключенияРасширеннаяПодсказка" id="38"/>
+							<Events>
+								<Event name="OnChange">ПодтверждениеОтключенияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="ОтменитьРегистрацию" id="12">
+							<Type>UsualButton</Type>
+							<Enabled>false</Enabled>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<CommandName>Form.Command.ОтменитьРегистрацию</CommandName>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="120"/>
+							<ExtendedTooltip name="ОтменитьРегистрациюРасширеннаяПодсказка" id="13"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЗапросаКода" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запроса кода</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница запроса кода</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЗапросаКодаРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<InputField name="EMail" id="17">
+							<DataPath>АдресЭлектроннойПочты</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите ваш адрес электронной почты.
+На этот адрес будет отправлено письмо с кодом регистрации.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="EMailКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="EMailРасширеннаяПодсказка" id="19"/>
+							<Events>
+								<Event name="OnChange">EMailПриИзменении</Event>
+								<Event name="EditTextChange">EMailИзменениеТекстаРедактирования</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаДополнительныеПараметрыРегистрации" id="20">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дополнительные параметры регистрации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДополнительныеПараметрыРегистрацииРасширеннаяПодсказка" id="21"/>
+							<ChildItems>
+								<InputField name="АдресСервера" id="22">
+									<DataPath>АдресСервера</DataPath>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="АдресСервераКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="EditTextChange">АдресСервераИзменениеТекстаРедактирования</Event>
+									</Events>
+								</InputField>
+								<InputField name="ИмяИБ" id="25">
+									<DataPath>ИмяИБ</DataPath>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ИмяИБКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ИмяИБРасширеннаяПодсказка" id="27"/>
+									<Events>
+										<Event name="EditTextChange">ИмяИБИзменениеТекстаРедактирования</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПолучитьКодРегистрации" id="30">
+							<Type>UsualButton</Type>
+							<Enabled>false</Enabled>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.ПолучитьКодРегистрации</CommandName>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="120"/>
+							<ExtendedTooltip name="ПолучитьКодРегистрацииРасширеннаяПодсказка" id="31"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРегистрации" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница регистрации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="СтраницаРегистрацииРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="КодРегистрации" id="14">
+							<DataPath>КодРегистрации</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите код регистрации, полученный в письме.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="КодРегистрацииКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="КодРегистрацииРасширеннаяПодсказка" id="16"/>
+							<Events>
+								<Event name="EditTextChange">КодРегистрацииИзменениеТекстаРедактирования</Event>
+							</Events>
+						</InputField>
+						<Button name="Зарегистрировать" id="34">
+							<Type>UsualButton</Type>
+							<Enabled>false</Enabled>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<CommandName>Form.Command.Зарегистрировать</CommandName>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="120"/>
+							<ExtendedTooltip name="ЗарегистрироватьРасширеннаяПодсказка" id="35"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УправлениеСистемойВзаимодействия</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КодРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресЭлектроннойПочты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес электронной почты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сервера взаимодействия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяИБ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодтверждениеОтключения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Я уверен, что хочу отключить обсуждения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Зарегистрировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить обсуждения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить обсуждения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Зарегистрировать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьРегистрацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обсуждения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить обсуждения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьРегистрацию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПолучитьКодРегистрации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить код регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить код регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКодРегистрации</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="74dbb7bf-0757-456d-9b0c-68fe8fec7f67">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.Путеводитель" category="Object">
+				<xr:TypeId>121fb6da-90d6-49b1-b52a-d2816f290be0</xr:TypeId>
+				<xr:ValueId>26f6b7d7-7bb5-4320-91bc-1335fda65b80</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.Путеводитель" category="Manager">
+				<xr:TypeId>f0d07e33-20bd-45a6-aff7-55eff897ae46</xr:TypeId>
+				<xr:ValueId>75c83e49-d27d-4906-98de-27f174bf6bec</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Путеводитель</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путеводитель по конфигурации</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.Путеводитель.Form.ФормаПутеводителя</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаПутеводителя</Form>
+			<Template>ГлавнаяСтраница</Template>
+			<Template>ГлавнаяСтраницаМобильная</Template>
+			<Template>ДемонстрационнаяКонфигурация</Template>
+			<Template>КомандныйИнтерфейс</Template>
+			<Template>Форма</Template>
+			<Template>ДинамическийСписок</Template>
+			<Template>ИнтерфейсныеСвойстваМетаданных</Template>
+			<Template>ОписаниеСтандартныхРеквизитовВМетаданных</Template>
+			<Template>Отчеты</Template>
+			<Template>Агрегаты</Template>
+			<Template>КомандыОбъектовМетаданных</Template>
+			<Template>ПроверкаЗаполнения</Template>
+			<Template>ЗаполнениеНачальнымиДанными</Template>
+			<Template>СообщенияИСостояние</Template>
+			<Template>ПечатьДокумента</Template>
+			<Template>КартинкиВТабличномДокументе</Template>
+			<Template>БыстрыйВыборИВводПоСтроке</Template>
+			<Template>Подбор</Template>
+			<Template>МножественныеЗначенияПоляВвода</Template>
+			<Template>ПрограммноеИзменениеОписанияФормы</Template>
+			<Template>ФункциональныеОпции</Template>
+			<Template>РаботаСФайламиИКартинками</Template>
+			<Template>ПраваДоступа</Template>
+			<Template>НачальнаяСтраница</Template>
+			<Template>ИнтерфейсПриложения</Template>
+			<Template>ХранилищеНастроекПользователей</Template>
+			<Template>ПроведениеДокументов</Template>
+			<Template>ВнешниеКомпоненты</Template>
+			<Template>МеханизмХарактеристик</Template>
+			<Template>ФорматированныйДокумент</Template>
+			<Template>Криптография</Template>
+			<Template>ПроизвольныеПредставленияОбъектов</Template>
+			<Template>МобильноеПриложение</Template>
+			<Template>МобильныйКлиент</Template>
+			<Template>ИсторияДанных</Template>
+			<Template>Планировщик</Template>
+			<Template>СистемаВзаимодействия</Template>
+			<Template>ТиповыеПриемыРазработки</Template>
+			<Template>ГлобальныйПоиск</Template>
+			<Template>Диаграммы</Template>
+			<Template>ОбработкаОшибок</Template>
+			<Template>БотыСистемыВзаимодействия</Template>
+			<Template>ОповещенияИЗапуск</Template>
+			<Template>ПрогрессивноеВебПриложение</Template>
+			<Template>ДополнительныеДемонстрационныеРесурсы</Template>
+			<Template>РегулярныеВыражения</Template>
+			<Template>БуферОбмена</Template>
+			<Command uuid="96ef0e75-a210-425d-86d1-beb68cdcf5b1">
+				<Properties>
+					<Name>ПутеводительПоКонфигурации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путеводитель по конфигурации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Информация</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

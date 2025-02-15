@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="DocumentJournal.ДокументыПродаж.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.РасчетныеСчетаКонтрагентов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.Продажи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ТоварныеЗапасы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.Заказ.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.РасходТовара.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.CreateFolder">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.CreateFolder">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.РасчетныеСчетаКонтрагентов.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДинамикаПродаж.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоВзаиморасчетам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Продавец">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DocumentJournal.ДокументыПродаж.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.Продажи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ТоварныеЗапасы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="DocumentJournal.ДокументыПродаж.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.Заказ.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РасходТовара.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.РасчетныеСчетаКонтрагентов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Enum.СостоянияЗаказов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.Заказ.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РасходТовара.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Товары.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.РасчетныеСчетаКонтрагентов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Report.ДинамикаПродаж.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоВзаиморасчетам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ВзаимосвязьПродажТоваров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelReports</Group>
+	</GroupsOrder>
+</CommandInterface>
