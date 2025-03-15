@@ -282,11 +282,6 @@
 			<Subsystem>ТоварныеЗапасы</Subsystem>
 			<Subsystem>МодификацияФормПодсистемы</Subsystem>
 			<Subsystem>МодификацияФорм</Subsystem>
-			<StyleItem>МФЦветВыделенныхНадписей</StyleItem>
-			<StyleItem>МФЦветНапоминаний</StyleItem>
-			<StyleItem>МФЦветОтсутствующихОбъектов</StyleItem>
-			<StyleItem>МФЦветРазличающихсяМакетов</StyleItem>
-			<StyleItem>МФШрифтНапоминаний</StyleItem>
 			<StyleItem>ЦветТекстаВажнойИнформации</StyleItem>
 			<StyleItem>ЦветТекстаНормальногоСостояния</StyleItem>
 			<StyleItem>ЦветТекстаОшибочногоСостояния</StyleItem>
@@ -343,8 +338,6 @@
 			<CommonModule>МФДекорацияФормы</CommonModule>
 			<CommonModule>МФИнструментыРазработчика</CommonModule>
 			<CommonModule>МФИнструментыРазработчикаКлиент</CommonModule>
-			<CommonModule>МФИнструментыРазработчикаКлиентСервер</CommonModule>
-			<CommonModule>МФИнструментыРазработчикаПовтИсп</CommonModule>
 			<CommonModule>МФКнопкаФормы</CommonModule>
 			<CommonModule>МФОбработкаСтрокСлужебный</CommonModule>
 			<CommonModule>МФОбработчикЗначенияДатаНеопределено</CommonModule>
