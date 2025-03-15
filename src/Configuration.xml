@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Модификация форм, редакция 1.1</v8:content>
+					<v8:content>Модификация форм, редакция 1.2</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Алексей А. Степаненко</Vendor>
-			<Version>1.1.0.3</Version>
+			<Version>1.2.0.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -237,13 +237,13 @@
 			<BriefInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Модификация форм, редакция 1.1</v8:content>
+					<v8:content>Модификация форм, редакция 1.2</v8:content>
 				</v8:item>
 			</BriefInformation>
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Модификация форм, редакция 1.1</v8:content>
+					<v8:content>Модификация форм, редакция 1.2</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
@@ -282,11 +282,16 @@
 			<Subsystem>ТоварныеЗапасы</Subsystem>
 			<Subsystem>МодификацияФормПодсистемы</Subsystem>
 			<Subsystem>МодификацияФорм</Subsystem>
-			<StyleItem>ЦветТекстаСущественныхИзмененийДанных</StyleItem>
+			<StyleItem>МФЦветВыделенныхНадписей</StyleItem>
+			<StyleItem>МФЦветНапоминаний</StyleItem>
+			<StyleItem>МФЦветОтсутствующихОбъектов</StyleItem>
+			<StyleItem>МФЦветРазличающихсяМакетов</StyleItem>
+			<StyleItem>МФШрифтНапоминаний</StyleItem>
+			<StyleItem>ЦветТекстаВажнойИнформации</StyleItem>
 			<StyleItem>ЦветТекстаНормальногоСостояния</StyleItem>
 			<StyleItem>ЦветТекстаОшибочногоСостояния</StyleItem>
+			<StyleItem>ЦветТекстаСущественныхИзмененийДанных</StyleItem>
 			<StyleItem>ШрифтВажнойИнформации</StyleItem>
-			<StyleItem>ЦветТекстаВажнойИнформации</StyleItem>
 			<CommonPicture>Позвонить</CommonPicture>
 			<CommonPicture>ПодсистемаПредприятие</CommonPicture>
 			<CommonPicture>ПодсистемаПродажи</CommonPicture>
@@ -323,29 +328,13 @@
 			<CommonTemplate>КомпонентаПечатиШтрихкодовLinux64</CommonTemplate>
 			<CommonTemplate>МФСинонимыСвойствЭлементов</CommonTemplate>
 			<FilterCriterion>ДокументыКонтрагента</FilterCriterion>
-			<CommonModule>ОбменМобильныеОбщее</CommonModule>
-			<CommonModule>ОбменМобильныеПереопределяемый</CommonModule>
-			<CommonModule>ГлобальныйПоискКлиент</CommonModule>
-			<CommonModule>ГлобальныйПоискСервер</CommonModule>
-			<CommonModule>ОбменМобильныеВызовПК</CommonModule>
+			<CommonModule>БотКлиент</CommonModule>
+			<CommonModule>БотСервер</CommonModule>
+			<CommonModule>ВходящийЗапросПоделитьсяКлиент</CommonModule>
 			<CommonModule>ГеопозиционированиеКлиент</CommonModule>
 			<CommonModule>ГеопозиционированиеСервер</CommonModule>
-			<CommonModule>Пользователи</CommonModule>
-			<CommonModule>БотСервер</CommonModule>
-			<CommonModule>БотКлиент</CommonModule>
-			<CommonModule>РаботаСИсториейДанных</CommonModule>
-			<CommonModule>РаботаСПанельюЗадач</CommonModule>
-			<CommonModule>РаботаСПолнотекстовымПоиском</CommonModule>
-			<CommonModule>РаботаСПочтой</CommonModule>
-			<CommonModule>РаботаСПочтойВызовСервера</CommonModule>
-			<CommonModule>РаботаСТорговымОборудованием</CommonModule>
-			<CommonModule>РаботаСХранилищемОбщихНастроек</CommonModule>
-			<CommonModule>РегламентныеЗаданияАгрегатов</CommonModule>
-			<CommonModule>СервисныеМеханизмы</CommonModule>
-			<CommonModule>СистемаВзаимодействияКлиент</CommonModule>
-			<CommonModule>УведомленияКлиент</CommonModule>
-			<CommonModule>УведомленияСервер</CommonModule>
-			<CommonModule>ВходящийЗапросПоделитьсяКлиент</CommonModule>
+			<CommonModule>ГлобальныйПоискКлиент</CommonModule>
+			<CommonModule>ГлобальныйПоискСервер</CommonModule>
 			<CommonModule>МодификацияФорм</CommonModule>
 			<CommonModule>МФГенераторПротокола</CommonModule>
 			<CommonModule>МФГенераторПротоколаПереопределяемый</CommonModule>
@@ -354,6 +343,8 @@
 			<CommonModule>МФДекорацияФормы</CommonModule>
 			<CommonModule>МФИнструментыРазработчика</CommonModule>
 			<CommonModule>МФИнструментыРазработчикаКлиент</CommonModule>
+			<CommonModule>МФИнструментыРазработчикаКлиентСервер</CommonModule>
+			<CommonModule>МФИнструментыРазработчикаПовтИсп</CommonModule>
 			<CommonModule>МФКнопкаФормы</CommonModule>
 			<CommonModule>МФОбработкаСтрокСлужебный</CommonModule>
 			<CommonModule>МФОбработчикЗначенияДатаНеопределено</CommonModule>
@@ -388,8 +379,27 @@
 			<CommonModule>МФСлужебный</CommonModule>
 			<CommonModule>МФСтандартныеПеречисленияСлужебный</CommonModule>
 			<CommonModule>МФТаблицаФормы</CommonModule>
+			<CommonModule>МФТестированиеВызовСервера</CommonModule>
+			<CommonModule>МФТестированиеКлиент</CommonModule>
+			<CommonModule>МФТестированиеКлиентСерверПовтИсп</CommonModule>
 			<CommonModule>МФЭлементыФормыПовтИсп</CommonModule>
 			<CommonModule>МФЭлементыФормыСлужебный</CommonModule>
+			<CommonModule>ОбменМобильныеВызовПК</CommonModule>
+			<CommonModule>ОбменМобильныеОбщее</CommonModule>
+			<CommonModule>ОбменМобильныеПереопределяемый</CommonModule>
+			<CommonModule>Пользователи</CommonModule>
+			<CommonModule>РаботаСИсториейДанных</CommonModule>
+			<CommonModule>РаботаСПанельюЗадач</CommonModule>
+			<CommonModule>РаботаСПолнотекстовымПоиском</CommonModule>
+			<CommonModule>РаботаСПочтой</CommonModule>
+			<CommonModule>РаботаСПочтойВызовСервера</CommonModule>
+			<CommonModule>РаботаСТорговымОборудованием</CommonModule>
+			<CommonModule>РаботаСХранилищемОбщихНастроек</CommonModule>
+			<CommonModule>РегламентныеЗаданияАгрегатов</CommonModule>
+			<CommonModule>СервисныеМеханизмы</CommonModule>
+			<CommonModule>СистемаВзаимодействияКлиент</CommonModule>
+			<CommonModule>УведомленияКлиент</CommonModule>
+			<CommonModule>УведомленияСервер</CommonModule>
 			<ExchangePlan>Мобильные</ExchangePlan>
 			<XDTOPackage>ОбменСМобильнымУстройством</XDTOPackage>
 			<WebService>MAExchange</WebService>
