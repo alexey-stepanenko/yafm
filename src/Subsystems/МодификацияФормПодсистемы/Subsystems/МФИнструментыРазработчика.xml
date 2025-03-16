@@ -23,6 +23,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаМодификацияФорм</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.МФВыборФормы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

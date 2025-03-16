@@ -309,6 +309,7 @@
 			<CommonPicture>NFC</CommonPicture>
 			<CommonPicture>Копировать</CommonPicture>
 			<CommonPicture>ПодсистемаМодификацияФорм</CommonPicture>
+			<CommonPicture>МФМетаданныеОбщие</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<SessionParameter>ЯщикIMAP</SessionParameter>
 			<Role>Администратор</Role>
@@ -476,6 +477,7 @@
 			<CommonForm>Звонок</CommonForm>
 			<CommonForm>ФормаВыбораПользователяСистемыВзаимодействия</CommonForm>
 			<CommonForm>МФАктуализацияМакетов</CommonForm>
+			<CommonForm>МФВыборФормы</CommonForm>
 			<Catalog>Регионы</Catalog>
 			<Catalog>Банки</Catalog>
 			<Catalog>Склады</Catalog>
@@ -537,6 +539,7 @@
 			<DataProcessor>ЭлектроннаяПочта</DataProcessor>
 			<DataProcessor>ОписанияМодификацийФорм</DataProcessor>
 			<DataProcessor>МФРаботаСМакетом</DataProcessor>
+			<DataProcessor>МФГенерацияАвтотестов</DataProcessor>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ЦеныТоваров</InformationRegister>
 			<InformationRegister>СостояниеВходящихПисем</InformationRegister>
