@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -8,24 +8,24 @@
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаИмяФормы" id="10">
+		<UsualGroup name="ГруппаИмяФормыОбщая" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа имя формы</v8:content>
+					<v8:content>Группа имя формы общая</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа имя формы</v8:content>
+					<v8:content>Группа имя формы общая</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ThroughAlign>DontUse</ThroughAlign>
-			<ExtendedTooltip name="ГруппаИмяФормыРасширеннаяПодсказка" id="11"/>
+			<ExtendedTooltip name="ГруппаИмяФормыОбщаяРасширеннаяПодсказка" id="11"/>
 			<ChildItems>
 				<InputField name="ИмяФормы" id="7">
 					<DataPath>Запись.ИмяФормы</DataPath>
@@ -51,31 +51,56 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаИмяМакета" id="30">
+		<UsualGroup name="ГруппаИмяМакетаОбщая" id="30">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа имя макета</v8:content>
+					<v8:content>Группа имя макета общая</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа имя макета</v8:content>
+					<v8:content>Группа имя макета общая</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИмяМакетаРасширеннаяПодсказка" id="31"/>
+			<ExtendedTooltip name="ГруппаИмяМакетаОбщаяРасширеннаяПодсказка" id="31"/>
 			<ChildItems>
-				<InputField name="ИмяМакета" id="1">
-					<DataPath>Запись.ИмяМакета</DataPath>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="ИмяМакетаРасширеннаяПодсказка" id="3"/>
-				</InputField>
+				<UsualGroup name="ГруппаИмяМакета" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя макета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяМакетаРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="ИмяМакета" id="1">
+							<DataPath>Запись.ИмяМакета</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИмяМакетаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="ЗагрузитьМакетИзКонфигурации" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьМакетИзКонфигурации</CommandName>
+							<ExtendedTooltip name="ЗагрузитьМакетИзКонфигурацииРасширеннаяПодсказка" id="42"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 				<LabelDecoration name="СтатусМакета" id="32">
 					<Visible>false</Visible>
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -102,6 +127,9 @@
 			<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
 			<ContextMenu name="ТекстМакетаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ТекстМакетаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ТекстМакетаПриИзменении</Event>
+			</Events>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -128,4 +156,26 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьМакетИзКонфигурации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить макет из конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить макет из конфигурации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьМакетИзКонфигурации</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
 </Form>
