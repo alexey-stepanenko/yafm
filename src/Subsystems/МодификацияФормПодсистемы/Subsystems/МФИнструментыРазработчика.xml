@@ -30,7 +30,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФЦветРазличающихсяМакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФШрифтНапоминаний</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФЦветЗапрещенныхКВыборуЭлементов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаКлиентСерверПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

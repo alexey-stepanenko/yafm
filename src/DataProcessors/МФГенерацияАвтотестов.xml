@@ -29,7 +29,11 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Form>РасширениеСТестами</Form>
+			<Form>ФормаДлительнойОперации</Form>
 			<Template>ШаблоныМодуляТестирования</Template>
+			<Template>ШаблонРасширения</Template>
+			<Template>ШаблонМодуляСТестом</Template>
 			<Command uuid="71b7ccca-844b-4253-89c2-55714db3fd10">
 				<Properties>
 					<Name>ГенерацияАвтотестов</Name>

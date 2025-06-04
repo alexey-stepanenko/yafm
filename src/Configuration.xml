@@ -346,7 +346,7 @@
 			<CommonModule>МФИнструментыРазработчика</CommonModule>
 			<CommonModule>МФИнструментыРазработчикаКлиент</CommonModule>
 			<CommonModule>МФИнструментыРазработчикаКлиентСервер</CommonModule>
-			<CommonModule>МФИнструментыРазработчикаПереопределяемый</CommonModule>
+			<CommonModule>МФИнструментыРазработчикаКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>МФИнструментыРазработчикаПовтИсп</CommonModule>
 			<CommonModule>МФКнопкаФормы</CommonModule>
 			<CommonModule>МФОбработкаСтрокСлужебный</CommonModule>
