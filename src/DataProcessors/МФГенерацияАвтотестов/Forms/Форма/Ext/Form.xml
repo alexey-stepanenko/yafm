@@ -42,7 +42,15 @@
 					<SearchControlLocation>None</SearchControlLocation>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="ТестируемыеФормыКонтекстноеМеню" id="4"/>
-					<AutoCommandBar name="ТестируемыеФормыКоманднаяПанель" id="5"/>
+					<AutoCommandBar name="ТестируемыеФормыКоманднаяПанель" id="5">
+						<ChildItems>
+							<Button name="ТестируемыеФормыЗагрузитьИзРасширения" id="78">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗагрузитьИзРасширения</CommandName>
+								<ExtendedTooltip name="ТестируемыеФормыЗагрузитьИзРасширенияРасширеннаяПодсказка" id="79"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
 					<ExtendedTooltip name="ТестируемыеФормыРасширеннаяПодсказка" id="6"/>
 					<SearchStringAddition name="ТестируемыеФормыСтрокаПоиска" id="7">
 						<AdditionSource>
@@ -859,6 +867,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьРасширениеСТестами</Action>
+		</Command>
+		<Command name="ЗагрузитьИзРасширения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из расширения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из расширения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзРасширения</Action>
 		</Command>
 	</Commands>
 </Form>
