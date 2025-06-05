@@ -30,7 +30,6 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>РасширениеСТестами</Form>
-			<Form>ФормаДлительнойОперации</Form>
 			<Template>ШаблоныМодуляТестирования</Template>
 			<Template>ШаблонРасширения</Template>
 			<Template>ШаблонМодуляСТестом</Template>
