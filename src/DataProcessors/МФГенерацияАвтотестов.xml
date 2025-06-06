@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>РасширениеСТестами</Form>
+			<Form>НастройкиГенерации</Form>
 			<Template>ШаблоныМодуляТестирования</Template>
 			<Template>ШаблонРасширения</Template>
 			<Template>ШаблонМодуляСТестом</Template>
