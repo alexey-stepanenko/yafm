@@ -113,6 +113,11 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<Button name="ПроверитьСоединение" id="22">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьСоединение</CommandName>
+			<ExtendedTooltip name="ПроверитьСоединениеРасширеннаяПодсказка" id="23"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -235,6 +240,21 @@
 			</Picture>
 			<Action>СохранитьПараметры</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПроверитьСоединение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСоединение</Action>
 		</Command>
 	</Commands>
 </Form>
