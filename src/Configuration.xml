@@ -329,6 +329,7 @@
 			<CommonTemplate>КомпонентаПечатиШтрихкодовLinux32</CommonTemplate>
 			<CommonTemplate>КомпонентаПечатиШтрихкодовLinux64</CommonTemplate>
 			<CommonTemplate>МФСинонимыСвойствЭлементов</CommonTemplate>
+			<CommonTemplate>MANIFEST</CommonTemplate>
 			<FilterCriterion>ДокументыКонтрагента</FilterCriterion>
 			<CommonModule>БотКлиент</CommonModule>
 			<CommonModule>БотСервер</CommonModule>
