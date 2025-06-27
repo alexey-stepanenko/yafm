@@ -922,6 +922,50 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ДоступностьФормироватьМодулиСТестами" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступность формировать модули с тестами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоступностьФормироватьМодулиЯдраТестирования" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступность формировать модули ядра тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФормироватьМодулиСТестами" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать модули с тестами</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФормироватьМодулиЯдраТестирования" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать модули ядра тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
