@@ -859,23 +859,7 @@
 			</Type>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="ВерсияРасширения1" id="22">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Версия</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<FillCheck>ShowError</FillCheck>
-		</Attribute>
-		<Attribute name="ИмяРасширения" id="23">
+		<Attribute name="ИмяРасширения1" id="23">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
