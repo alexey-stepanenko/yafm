@@ -2,15 +2,11 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаСоздатьРасширение" id="55">
+			<Button name="ФормаСгенерироватьРасширение" id="48">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СоздатьРасширение</CommandName>
-				<ExtendedTooltip name="ФормаСоздатьРасширениеРасширеннаяПодсказка" id="56"/>
-			</Button>
-			<Button name="ФормаОбновитьРасширение" id="57">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОбновитьРасширение</CommandName>
-				<ExtendedTooltip name="ФормаОбновитьРасширениеРасширеннаяПодсказка" id="58"/>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СгенерироватьРасширение</CommandName>
+				<ExtendedTooltip name="ФормаСгенерироватьРасширениеРасширеннаяПодсказка" id="49"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -141,6 +137,61 @@
 					<ContextMenu name="ФормироватьМодулиСТестамиКонтекстноеМеню" id="46"/>
 					<ExtendedTooltip name="ФормироватьМодулиСТестамиРасширеннаяПодсказка" id="47"/>
 				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРежимРаботы" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа режим работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаРежимРаботыРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<RadioButtonField name="РежимРаботы" id="37">
+					<DataPath>РежимРаботыГенерацииРасширения</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать расширение</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Обновить расширение</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="РежимРаботыКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">РежимРаботыПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -305,34 +356,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СгенерироватьРасширение</Action>
-		</Command>
-		<Command name="СоздатьРасширение" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Создать расширение</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Создать расширение</v8:content>
-				</v8:item>
-			</ToolTip>
-		</Command>
-		<Command name="ОбновитьРасширение" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить расширение</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить расширение</v8:content>
-				</v8:item>
-			</ToolTip>
 		</Command>
 	</Commands>
 </Form>
