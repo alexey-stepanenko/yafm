@@ -319,6 +319,7 @@
 					<v8:content>Создать расширение</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>СоздатьРасширение</Action>
 		</Command>
 		<Command name="ОбновитьРасширение" id="3">
 			<Title>
