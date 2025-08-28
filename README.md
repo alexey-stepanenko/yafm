@@ -17,3 +17,5 @@
 Пример макета изменения конфигурации:
 
 ![Макет изменения формы](/docs/img/template.png "Макет изменения формы")
+
+![Infostart Logo](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg) [Статья на Инфостарте](https://infostart.ru/public/2309875/)
