@@ -1,5 +1,6 @@
 tmp/
 infobase/
 releases/
+scripts/*.sh
 src/ConfigDumpInfo.xml
 tests/unit/ConfigDumpInfo.xml
