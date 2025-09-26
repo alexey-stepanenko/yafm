@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
-	<DataProcessor uuid="7338ed48-10f9-4ced-80e2-733888ff3914">
+	<DataProcessor uuid="529e3364-bfa8-4697-842e-ea23eb2ecf24">
 		<InternalInfo>
 			<xr:GeneratedType name="DataProcessorObject.МФГенерацияАвтотестов" category="Object">
-				<xr:TypeId>ff16c540-1474-4c79-93af-c63c6194b89c</xr:TypeId>
-				<xr:ValueId>7e1f5816-cbf4-458b-95a4-20146c860f54</xr:ValueId>
+				<xr:TypeId>3429a8f4-cbb3-47ce-a630-607ff0e19315</xr:TypeId>
+				<xr:ValueId>f720d83d-b302-48a9-889d-dc10363c62e0</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.МФГенерацияАвтотестов" category="Manager">
-				<xr:TypeId>58ebded9-72f1-4fc6-a6a7-768308ab52fb</xr:TypeId>
-				<xr:ValueId>0d779b22-6d88-4258-8bf0-7bc0df5eae96</xr:ValueId>
+				<xr:TypeId>20fb2405-b076-418d-86d8-41b294080dc4</xr:TypeId>
+				<xr:ValueId>9f71ba3a-2938-4611-a7c1-d51cf10fd192</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -33,9 +33,8 @@
 			<Form>ДиалогРасширениеСТестами</Form>
 			<Form>ГенераторРасширения</Form>
 			<Template>ШаблоныМодуляТестирования</Template>
-			<Template>ШаблонРасширения</Template>
-			<Template>ШаблонМодуляСТестом</Template>
-			<Command uuid="71b7ccca-844b-4253-89c2-55714db3fd10">
+			<Template>ШаблонРасширенияДляТестов</Template>
+			<Command uuid="d9a1e09d-82ff-4b42-97a0-78c0a8c382a5">
 				<Properties>
 					<Name>ГенерацияАвтотестов</Name>
 					<Synonym>

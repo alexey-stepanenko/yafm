@@ -22,7 +22,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаМодификацияФорм</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.МФВыборФормы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФЦветВыделенныхНадписей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФЦветНапоминаний</xr:Item>
@@ -31,6 +30,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФШрифтНапоминаний</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.МФЦветЗапрещенныхКВыборуЭлементов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
