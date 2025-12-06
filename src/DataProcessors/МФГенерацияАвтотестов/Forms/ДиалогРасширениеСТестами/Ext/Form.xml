@@ -7,11 +7,6 @@
 				<CommandName>Form.Command.СоздатьРасширение</CommandName>
 				<ExtendedTooltip name="ФормаСоздатьРасширениеРасширеннаяПодсказка" id="56"/>
 			</Button>
-			<Button name="ФормаОбновитьРасширение" id="57">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОбновитьРасширение</CommandName>
-				<ExtendedTooltip name="ФормаОбновитьРасширениеРасширеннаяПодсказка" id="58"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -45,7 +40,6 @@
 					<ContextMenu name="ПолныйПутьКФайлуРасширенияКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ПолныйПутьКФайлуРасширенияРасширеннаяПодсказка" id="3"/>
 					<Events>
-						<Event name="OnChange">ПолныйПутьКФайлуРасширенияПриИзменении</Event>
 						<Event name="StartChoice">ПолныйПутьКФайлуРасширенияНачалоВыбора</Event>
 					</Events>
 				</InputField>
@@ -69,6 +63,7 @@
 							<v8:content>Группа версия расширения</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
 					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -76,6 +71,8 @@
 					<ChildItems>
 						<InputField name="ВерсияРасширения" id="32">
 							<DataPath>ВерсияРасширения</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ВерсияРасширенияКонтекстноеМеню" id="33"/>
 							<ExtendedTooltip name="ВерсияРасширенияРасширеннаяПодсказка" id="34"/>
@@ -84,6 +81,7 @@
 							</Events>
 						</InputField>
 						<LabelDecoration name="ДекорацияВерсияРасширения" id="52">
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<TextColor>style:МФЦветВыделенныхНадписей</TextColor>
 							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 							<Title formatted="false">
@@ -289,23 +287,19 @@
 				<v8:Type>v8ui:Color</v8:Type>
 			</Type>
 		</Attribute>
-	</Attributes>
-	<Commands>
-		<Command name="СгенерироватьРасширение" id="1">
+		<Attribute name="ВозможностьОбновленияРасширения" id="10">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать расширение</v8:content>
+					<v8:content>Возможность обновления расширения</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сгенерировать расширение</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>СгенерироватьРасширение</Action>
-		</Command>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
 		<Command name="СоздатьРасширение" id="2">
 			<Title>
 				<v8:item>
@@ -320,20 +314,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьРасширение</Action>
-		</Command>
-		<Command name="ОбновитьРасширение" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить расширение</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить расширение</v8:content>
-				</v8:item>
-			</ToolTip>
 		</Command>
 	</Commands>
 </Form>
