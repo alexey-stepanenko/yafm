@@ -46,3 +46,13 @@ exec="$exec -src $src"
 
 eval "$exec"
 ```
+
+## create-release
+
+Скрипт создания нового релиза. Создает файл поставки и расширение для разработчика. Версия релиза читается из Configuration.xml
+
+Строка вызова:
+
+``` bash
+oscript ./scripts/create-release/main.os create -source ./src -releases ./releases/
+```
