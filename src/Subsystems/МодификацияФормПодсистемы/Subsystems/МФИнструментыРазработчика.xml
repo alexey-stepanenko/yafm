@@ -32,6 +32,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаКлиентСерверПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФИнструментыРазработчикаПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФМетаданныеОбщие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
