@@ -54,5 +54,5 @@ eval "$exec"
 Строка вызова:
 
 ``` bash
-oscript ./scripts/create-release/main.os create -source ./src -releases ./releases/
+oscript ./scripts/create-release/main.os create -source ./src -releases ./releases/ -distrib-variants "Поставка,РасширениеРазработчикаДляПоставки"
 ```
