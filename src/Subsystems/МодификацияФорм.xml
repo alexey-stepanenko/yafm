@@ -20,10 +20,8 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФРаботаСМакетом</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МФМакеты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаМодификацияФорм</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">7338ed48-10f9-4ced-80e2-733888ff3914</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МФМакеты</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
