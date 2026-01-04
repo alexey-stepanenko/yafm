@@ -20,6 +20,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФТестированиеКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФТестированиеКлиентСерверПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.MANIFEST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФСлужебный</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
