@@ -34,7 +34,6 @@
 			<Form>ГенераторРасширения</Form>
 			<Template>ШаблоныМодуляТестирования</Template>
 			<Template>ШаблонРасширенияДляТестов</Template>
-			<Template>ШаблонРасширенияДляТестов1</Template>
 			<Command uuid="d9a1e09d-82ff-4b42-97a0-78c0a8c382a5">
 				<Properties>
 					<Name>ГенерацияАвтотестов</Name>
