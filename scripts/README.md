@@ -42,7 +42,7 @@ then
     exec="$exec -platform \"$platform\""
 fi
 
-exec="$exec -src $src"
+exec="$exec -source $src"
 
 eval "$exec"
 ```
@@ -54,5 +54,5 @@ eval "$exec"
 Строка вызова:
 
 ``` bash
-oscript ./scripts/create-release/main.os create -source ./src -releases ./releases/ -distrib-variants "Поставка,РасширениеРазработчикаДляПоставки"
+oscript ./scripts/create-release.os create -source ./src -releases ./releases/ -distrib-variants "Поставка,РасширениеРазработчикаДляПоставки"
 ```
