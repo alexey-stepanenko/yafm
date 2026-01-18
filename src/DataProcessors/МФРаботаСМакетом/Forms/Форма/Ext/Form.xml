@@ -480,6 +480,7 @@
 									<DataPath>ИмяМакета</DataPath>
 									<TitleTextColor>style:МФЦветНапоминаний</TitleTextColor>
 									<TitleFont ref="style:МФШрифтНапоминаний" kind="StyleItem"/>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<TextEdit>false</TextEdit>
 									<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="149"/>
