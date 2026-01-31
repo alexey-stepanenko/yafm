@@ -21,4 +21,9 @@
 
 ![Макет изменения формы](/docs/img/template.png "Макет изменения формы")
 
-![Infostart Logo](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg) [Статья на Инфостарте](https://infostart.ru/public/2309875/)
+## Статьи на Инфостарте
+
+![Infostart Logo](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg) 
+
+* [Еще один модификатор форм (Yet Another Form Modificator)](https://infostart.ru/1c/articles/2309875/)
+* [Еще один модификатор форм (Yet Another Form Modificator): генерация автотестов и редактирование "на лету"](https://infostart.ru/1c/articles/2549411/)
