@@ -3,16 +3,121 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="ИмяМакета" id="1">
-			<DataPath>Запись.ИмяМакета</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ИмяМакетаРасширеннаяПодсказка" id="3"/>
-		</InputField>
+		<UsualGroup name="ГруппаИмяФормыОбщая" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя формы общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя формы общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>DontUse</ThroughAlign>
+			<ExtendedTooltip name="ГруппаИмяФормыОбщаяРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="ИмяФормы" id="7">
+					<DataPath>Запись.ИмяФормы</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФормыКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИмяФормыРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<LabelDecoration name="СтатусФормы" id="12">
+					<Visible>false</Visible>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:МФЦветВыделенныхНадписей</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма не существует</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="СтатусФормыКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="СтатусФормыРасширеннаяПодсказка" id="14"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИмяМакетаОбщая" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя макета общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа имя макета общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИмяМакетаОбщаяРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИмяМакета" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя макета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяМакетаРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="ИмяМакета" id="1">
+							<DataPath>Запись.ИмяМакета</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИмяМакетаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="ЗагрузитьМакетИзКонфигурации" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьМакетИзКонфигурации</CommandName>
+							<ExtendedTooltip name="ЗагрузитьМакетИзКонфигурацииРасширеннаяПодсказка" id="42"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="СтатусМакета" id="32">
+					<Visible>false</Visible>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:МФЦветВыделенныхНадписей</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус макета</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="СтатусМакетаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СтатусМакетаРасширеннаяПодсказка" id="34"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="ТекстМакета" id="4">
 			<DataPath>ТекстМакета</DataPath>
 			<TitleLocation>None</TitleLocation>
@@ -22,6 +127,9 @@
 			<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
 			<ContextMenu name="ТекстМакетаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ТекстМакетаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ТекстМакетаПриИзменении</Event>
+			</Events>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -48,4 +156,26 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьМакетИзКонфигурации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить макет из конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить макет из конфигурации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьМакетИзКонфигурации</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
 </Form>

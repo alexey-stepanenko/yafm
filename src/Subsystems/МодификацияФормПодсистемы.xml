@@ -23,6 +23,7 @@
 			<Subsystem>МФОбработчикиЗначенийСвойств</Subsystem>
 			<Subsystem>МФОбработчикиСтрок</Subsystem>
 			<Subsystem>МФОбработчикиТиповЭлементовФормы</Subsystem>
+			<Subsystem>МФТестирование</Subsystem>
 			<Subsystem>МФЯдро</Subsystem>
 		</ChildObjects>
 	</Subsystem>

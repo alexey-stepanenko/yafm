@@ -201,7 +201,7 @@
 						<RadioButtonField name="СостояниеЗаказа" id="90">
 							<DataPath>Объект.СостояниеЗаказа</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<RadioButtonType>Tumbler</RadioButtonType>
+							<RadioButtonType>RadioButtons</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
 									<xr:Presentation/>

@@ -20,8 +20,8 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФРаботаСМакетом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МФМакеты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаМодификацияФорм</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

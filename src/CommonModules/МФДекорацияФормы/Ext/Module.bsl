@@ -1,6 +1,6 @@
 ﻿//©///////////////////////////////////////////////////////////////////////////©//
 //
-//  Copyright 2025 Alexey A. Stepanenko 
+//  Copyright 2025-2026 Alexey A. Stepanenko 
 //    * alexey.stepanenko@gmail.com
 //    * TG: @AlexeyStepanenko
 //    * https://github.com/alexey-stepanenko
@@ -117,6 +117,10 @@
 		ВидДекорацииФормы.Надпись
 	);
 	// BSLLS:NestedFunctionInParameters-on
+КонецПроцедуры
+
+Процедура ЗаполнитьСвойстваЭлементаНедоступныеНаКлиенте(ОписанияСвойств, СинонимыСвойствЭлементов) Экспорт
+	
 КонецПроцедуры
 
 #КонецОбласти

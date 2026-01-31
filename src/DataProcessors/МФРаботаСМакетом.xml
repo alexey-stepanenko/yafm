@@ -32,7 +32,6 @@
 			<Form>ФормаПодбора</Form>
 			<Form>СозданиеНовогоМакета</Form>
 			<Template>КартинкаКоманды</Template>
-			<Template>КартинкаМетаданныеОбщие</Template>
 			<Template>КартинкаРеквизиты</Template>
 			<Template>КартинкаЭлементы</Template>
 			<Template>Шаблоны</Template>
