@@ -29,7 +29,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиСочетаниеКлавиш</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиТипРеквизита</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиЦвет</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">02c2b984-bb6b-4320-bab6-bbbd8c260051</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиЭлемент</xr:Item>
 			</Content>
 		</Properties>
