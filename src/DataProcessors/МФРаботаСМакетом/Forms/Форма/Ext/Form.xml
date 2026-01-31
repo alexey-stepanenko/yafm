@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="42">
@@ -43,15 +45,17 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИзменяемаяФормаРасширеннаяПодсказка" id="117"/>
 					<ChildItems>
-						<InputField name="ПолноеИмяФормы" id="25">
-							<DataPath>ПолноеИмяФормы</DataPath>
+						<InputField name="ИмяРедактируемойФормы" id="25">
+							<DataPath>ИмяРедактируемойФормы</DataPath>
 							<AutoMaxWidth>false</AutoMaxWidth>
+							<DropListButton>true</DropListButton>
 							<ChoiceButton>true</ChoiceButton>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<TextEdit>false</TextEdit>
-							<ContextMenu name="ПолноеИмяФормыКонтекстноеМеню" id="26"/>
-							<ExtendedTooltip name="ПолноеИмяФормыРасширеннаяПодсказка" id="27"/>
+							<ContextMenu name="ИмяРедактируемойФормыКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ИмяРедактируемойФормыРасширеннаяПодсказка" id="27"/>
 							<Events>
+								<Event name="OnChange">ПолноеИмяФормыПриИзменении</Event>
 								<Event name="StartChoice">ПолноеИмяФормыНачалоВыбора</Event>
 							</Events>
 						</InputField>
@@ -62,435 +66,448 @@
 						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаИмяМакета" id="118">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа имя макета</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа имя макета</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>AlwaysHorizontal</Group>
-					<Representation>None</Representation>
-					<United>false</United>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИмяМакетаРасширеннаяПодсказка" id="119"/>
-					<ChildItems>
-						<UsualGroup name="ГруппаИмяМакетаОписанияМодификаций" id="112">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа имя макета описания модификаций</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа имя макета описания модификаций</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИмяМакетаОписанияМодификацийРасширеннаяПодсказка" id="113"/>
-							<ChildItems>
-								<InputField name="ИмяМакетаОписанияМодификаций" id="28">
-									<DataPath>ИмяМакетаОписанияМодификаций</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<DropListButton>true</DropListButton>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ИмяМакетаОписанияМодификацийКонтекстноеМеню" id="29"/>
-									<ExtendedTooltip name="ИмяМакетаОписанияМодификацийРасширеннаяПодсказка" id="30"/>
-									<Events>
-										<Event name="OnChange">ИмяМакетаОписанияМодификацийПриИзменении</Event>
-									</Events>
-								</InputField>
-								<Button name="ОбновитьИменаМакетов" id="114">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ОбновитьИменаМакетов</CommandName>
-									<ExtendedTooltip name="ОбновитьИменаМакетовРасширеннаяПодсказка" id="115"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<Button name="ПрочитатьМакет" id="37">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ПрочитатьМакет</CommandName>
-							<ExtendedTooltip name="ПрочитатьМакетРасширеннаяПодсказка" id="38"/>
-						</Button>
-					</ChildItems>
-				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<CommandBar name="МакетОписанияМодификацииКоманднаяПанель" id="48">
+		<UsualGroup name="ГруппаМакет" id="139">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Макет описания модификации командная панель</v8:content>
+					<v8:content>Макет модификации формы</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Макет описания модификации командная панель</v8:content>
+					<v8:content>Группа макет</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="МакетОписанияМодификацииКоманднаяПанельРасширеннаяПодсказка" id="49"/>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаМакетРасширеннаяПодсказка" id="140"/>
 			<ChildItems>
-				<Button name="НовыйМакет" id="50">
-					<Type>CommandBarButton</Type>
-					<CommandName>Form.Command.НовыйМакет</CommandName>
-					<ExtendedTooltip name="НовыйМакетРасширеннаяПодсказка" id="51"/>
-				</Button>
-				<ButtonGroup name="ГруппаШаблоны" id="56">
+				<CommandBar name="МакетОписанияМодификацииКоманднаяПанель" id="48">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа шаблоны</v8:content>
+							<v8:content>Макет описания модификации командная панель</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа шаблоны</v8:content>
+							<v8:content>Макет описания модификации командная панель</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппаШаблоныРасширеннаяПодсказка" id="57"/>
+					<ExtendedTooltip name="МакетОписанияМодификацииКоманднаяПанельРасширеннаяПодсказка" id="49"/>
 					<ChildItems>
-						<Popup name="ГруппаЭлемент" id="62">
+						<Button name="НовыйМакет" id="50">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.НовыйМакет</CommandName>
+							<ExtendedTooltip name="НовыйМакетРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<ButtonGroup name="ГруппаШаблоны" id="56">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Элемент</v8:content>
+									<v8:content>Группа шаблоны</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа элемент</v8:content>
+									<v8:content>Группа шаблоны</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаЭлементРасширеннаяПодсказка" id="63"/>
+							<ExtendedTooltip name="ГруппаШаблоныРасширеннаяПодсказка" id="57"/>
 							<ChildItems>
-								<Button name="ВставитьЭлементОписание" id="66">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.ВставитьЭлементОписание</CommandName>
-									<ExtendedTooltip name="ВставитьЭлементОписаниеРасширеннаяПодсказка" id="67"/>
-								</Button>
-								<ButtonGroup name="ГруппаЭлементСостав" id="88">
+								<Popup name="ГруппаЭлемент" id="62">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа элемент состав</v8:content>
+											<v8:content>Элемент</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа элемент состав</v8:content>
+											<v8:content>Группа элемент</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаЭлементСоставРасширеннаяПодсказка" id="89"/>
+									<ExtendedTooltip name="ГруппаЭлементРасширеннаяПодсказка" id="63"/>
 									<ChildItems>
-										<Button name="ВставитьЭлемент" id="68">
+										<Button name="ВставитьЭлементОписание" id="66">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьЭлемент</CommandName>
-											<ExtendedTooltip name="ВставитьЭлементРасширеннаяПодсказка" id="69"/>
+											<CommandName>Form.Command.ВставитьЭлементОписание</CommandName>
+											<ExtendedTooltip name="ВставитьЭлементОписаниеРасширеннаяПодсказка" id="67"/>
 										</Button>
-										<Button name="ВставитьРодительЭлемента" id="70">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьРодительЭлемента</CommandName>
-											<ExtendedTooltip name="ВставитьРодительЭлементаРасширеннаяПодсказка" id="71"/>
-										</Button>
-										<Button name="ВставитьПоследующийЭлемент" id="72">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьПоследующийЭлемент</CommandName>
-											<ExtendedTooltip name="ВставитьПоследующийЭлементРасширеннаяПодсказка" id="73"/>
-										</Button>
-										<Button name="ВставитьСвойствоЭлемента" id="74">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьСвойствоЭлемента</CommandName>
-											<ExtendedTooltip name="ВставитьСвойствоЭлементаРасширеннаяПодсказка" id="75"/>
-										</Button>
-										<Button name="ВставитьСобытиеЭлемента" id="76">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьСобытиеЭлемента</CommandName>
-											<ExtendedTooltip name="ВставитьСобытиеЭлементаРасширеннаяПодсказка" id="77"/>
-										</Button>
-									</ChildItems>
-								</ButtonGroup>
-							</ChildItems>
-						</Popup>
-						<Popup name="ГруппаРеквизит" id="52">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Реквизит</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа реквизит</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаРеквизитРасширеннаяПодсказка" id="53"/>
-							<ChildItems>
-								<Button name="ВставитьРеквизитОписание" id="54">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.ВставитьРеквизитОписание</CommandName>
-									<ExtendedTooltip name="ВставитьРеквизитОписаниеРасширеннаяПодсказка" id="55"/>
-								</Button>
-								<ButtonGroup name="ГруппаРеквизитСостав" id="90">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа реквизит состав</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа реквизит состав</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаРеквизитСоставРасширеннаяПодсказка" id="91"/>
-									<ChildItems>
-										<Button name="ВставитьРеквизит" id="58">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьРеквизит</CommandName>
-											<ExtendedTooltip name="ВставитьРеквизитРасширеннаяПодсказка" id="59"/>
-										</Button>
-										<Button name="ВставитьТипРеквизита" id="60">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьТипРеквизита</CommandName>
-											<ExtendedTooltip name="ВставитьТипРеквизитаРасширеннаяПодсказка" id="61"/>
-										</Button>
-									</ChildItems>
-								</ButtonGroup>
-							</ChildItems>
-						</Popup>
-						<Popup name="ГруппаКоманда" id="64">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Команда</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа команда</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаКомандаРасширеннаяПодсказка" id="65"/>
-							<ChildItems>
-								<Button name="ВставитьКомандаОписание" id="78">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.ВставитьКомандаОписание</CommandName>
-									<ExtendedTooltip name="ВставитьКомандаОписаниеРасширеннаяПодсказка" id="79"/>
-								</Button>
-								<ButtonGroup name="ГруппаКомандаСостав" id="92">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа команда состав</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа команда состав</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаКомандаСоставРасширеннаяПодсказка" id="93"/>
-									<ChildItems>
-										<Button name="ВставитьКоманда" id="80">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьКоманда</CommandName>
-											<ExtendedTooltip name="ВставитьКомандаРасширеннаяПодсказка" id="81"/>
-										</Button>
-										<Button name="ВставитьЗаголовокКоманды" id="82">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьЗаголовокКоманды</CommandName>
-											<ExtendedTooltip name="ВставитьЗаголовокКомандыРасширеннаяПодсказка" id="83"/>
-										</Button>
-										<Button name="ВставитьДействиеКоманды" id="84">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьДействиеКоманды</CommandName>
-											<ExtendedTooltip name="ВставитьДействиеКомандыРасширеннаяПодсказка" id="85"/>
-										</Button>
-									</ChildItems>
-								</ButtonGroup>
-							</ChildItems>
-						</Popup>
-						<Popup name="ГруппаДополнительныеЭлементы" id="86">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Дополнительные элементы</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дополнительные элементы</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаДополнительныеЭлементыРасширеннаяПодсказка" id="87"/>
-							<ChildItems>
-								<Popup name="ГруппаЦвет" id="104">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Цвет</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа цвет</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаЦветРасширеннаяПодсказка" id="105"/>
-									<ChildItems>
-										<Button name="ВставитьЦветОписание" id="106">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьЦветОписание</CommandName>
-											<ExtendedTooltip name="ВставитьЦветОписаниеРасширеннаяПодсказка" id="107"/>
-										</Button>
-										<ButtonGroup name="ГруппаЦветСостав" id="108">
+										<ButtonGroup name="ГруппаЭлементСостав" id="88">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа цвет состав</v8:content>
+													<v8:content>Группа элемент состав</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа цвет состав</v8:content>
+													<v8:content>Группа элемент состав</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаЦветСоставРасширеннаяПодсказка" id="109"/>
+											<ExtendedTooltip name="ГруппаЭлементСоставРасширеннаяПодсказка" id="89"/>
 											<ChildItems>
-												<Button name="ВставитьЦвет" id="110">
+												<Button name="ВставитьЭлемент" id="68">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ВставитьЦвет</CommandName>
-													<ExtendedTooltip name="ВставитьЦветРасширеннаяПодсказка" id="111"/>
+													<CommandName>Form.Command.ВставитьЭлемент</CommandName>
+													<ExtendedTooltip name="ВставитьЭлементРасширеннаяПодсказка" id="69"/>
+												</Button>
+												<Button name="ВставитьРодительЭлемента" id="70">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРодительЭлемента</CommandName>
+													<ExtendedTooltip name="ВставитьРодительЭлементаРасширеннаяПодсказка" id="71"/>
+												</Button>
+												<Button name="ВставитьПоследующийЭлемент" id="72">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьПоследующийЭлемент</CommandName>
+													<ExtendedTooltip name="ВставитьПоследующийЭлементРасширеннаяПодсказка" id="73"/>
+												</Button>
+												<Button name="ВставитьСвойствоЭлемента" id="74">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьСвойствоЭлемента</CommandName>
+													<ExtendedTooltip name="ВставитьСвойствоЭлементаРасширеннаяПодсказка" id="75"/>
+												</Button>
+												<Button name="ВставитьСобытиеЭлемента" id="76">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьСобытиеЭлемента</CommandName>
+													<ExtendedTooltip name="ВставитьСобытиеЭлементаРасширеннаяПодсказка" id="77"/>
 												</Button>
 											</ChildItems>
 										</ButtonGroup>
 									</ChildItems>
 								</Popup>
-								<Popup name="ГруппаСочетаниеКлавиш" id="120">
+								<Popup name="ГруппаРеквизит" id="52">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Сочетание клавиш</v8:content>
+											<v8:content>Реквизит</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа сочетание клавиш</v8:content>
+											<v8:content>Группа реквизит</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаСочетаниеКлавишРасширеннаяПодсказка" id="121"/>
+									<ExtendedTooltip name="ГруппаРеквизитРасширеннаяПодсказка" id="53"/>
 									<ChildItems>
-										<Button name="ВставитьСочетаниеКлавишОписание" id="122">
+										<Button name="ВставитьРеквизитОписание" id="54">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьСочетаниеКлавишОписание</CommandName>
-											<ExtendedTooltip name="ВставитьСочетаниеКлавишОписаниеРасширеннаяПодсказка" id="123"/>
+											<CommandName>Form.Command.ВставитьРеквизитОписание</CommandName>
+											<ExtendedTooltip name="ВставитьРеквизитОписаниеРасширеннаяПодсказка" id="55"/>
 										</Button>
-										<ButtonGroup name="ГруппаСочетаниеКлавишСостав" id="124">
+										<ButtonGroup name="ГруппаРеквизитСостав" id="90">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа сочетание клавиш состав</v8:content>
+													<v8:content>Группа реквизит состав</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа сочетание клавиш состав</v8:content>
+													<v8:content>Группа реквизит состав</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаСочетаниеКлавишСоставРасширеннаяПодсказка" id="125"/>
+											<ExtendedTooltip name="ГруппаРеквизитСоставРасширеннаяПодсказка" id="91"/>
 											<ChildItems>
-												<Button name="ВставитьСочетаниеКлавиш" id="126">
+												<Button name="ВставитьРеквизит" id="58">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ВставитьСочетаниеКлавиш</CommandName>
-													<ExtendedTooltip name="ВставитьСочетаниеКлавишРасширеннаяПодсказка" id="127"/>
+													<CommandName>Form.Command.ВставитьРеквизит</CommandName>
+													<ExtendedTooltip name="ВставитьРеквизитРасширеннаяПодсказка" id="59"/>
+												</Button>
+												<Button name="ВставитьТипРеквизита" id="60">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьТипРеквизита</CommandName>
+													<ExtendedTooltip name="ВставитьТипРеквизитаРасширеннаяПодсказка" id="61"/>
 												</Button>
 											</ChildItems>
 										</ButtonGroup>
 									</ChildItems>
 								</Popup>
-								<Popup name="ГруппаРамка" id="128">
+								<Popup name="ГруппаКоманда" id="64">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Рамка</v8:content>
+											<v8:content>Команда</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа рамка</v8:content>
+											<v8:content>Группа команда</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаРамкаРасширеннаяПодсказка" id="129"/>
+									<ExtendedTooltip name="ГруппаКомандаРасширеннаяПодсказка" id="65"/>
 									<ChildItems>
-										<Button name="ВставитьРамкаОписание" id="130">
+										<Button name="ВставитьКомандаОписание" id="78">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.ВставитьРамкаОписание</CommandName>
-											<ExtendedTooltip name="ВставитьРамкаОписаниеРасширеннаяПодсказка" id="131"/>
+											<CommandName>Form.Command.ВставитьКомандаОписание</CommandName>
+											<ExtendedTooltip name="ВставитьКомандаОписаниеРасширеннаяПодсказка" id="79"/>
 										</Button>
-										<ButtonGroup name="ГруппаРамкаСостав" id="132">
+										<ButtonGroup name="ГруппаКомандаСостав" id="92">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа рамка состав</v8:content>
+													<v8:content>Группа команда состав</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа рамка состав</v8:content>
+													<v8:content>Группа команда состав</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ExtendedTooltip name="ГруппаРамкаСоставРасширеннаяПодсказка" id="133"/>
+											<ExtendedTooltip name="ГруппаКомандаСоставРасширеннаяПодсказка" id="93"/>
 											<ChildItems>
-												<Button name="ВставитьРамка" id="134">
+												<Button name="ВставитьКоманда" id="80">
 													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.ВставитьРамка</CommandName>
-													<ExtendedTooltip name="ВставитьРамкаРасширеннаяПодсказка" id="135"/>
+													<CommandName>Form.Command.ВставитьКоманда</CommandName>
+													<ExtendedTooltip name="ВставитьКомандаРасширеннаяПодсказка" id="81"/>
+												</Button>
+												<Button name="ВставитьЗаголовокКоманды" id="82">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьЗаголовокКоманды</CommandName>
+													<ExtendedTooltip name="ВставитьЗаголовокКомандыРасширеннаяПодсказка" id="83"/>
+												</Button>
+												<Button name="ВставитьДействиеКоманды" id="84">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьДействиеКоманды</CommandName>
+													<ExtendedTooltip name="ВставитьДействиеКомандыРасширеннаяПодсказка" id="85"/>
 												</Button>
 											</ChildItems>
 										</ButtonGroup>
+									</ChildItems>
+								</Popup>
+								<Popup name="ГруппаДополнительныеЭлементы" id="86">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные элементы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнительные элементы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаДополнительныеЭлементыРасширеннаяПодсказка" id="87"/>
+									<ChildItems>
+										<Popup name="ГруппаЦвет" id="104">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Цвет</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа цвет</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаЦветРасширеннаяПодсказка" id="105"/>
+											<ChildItems>
+												<Button name="ВставитьЦветОписание" id="106">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьЦветОписание</CommandName>
+													<ExtendedTooltip name="ВставитьЦветОписаниеРасширеннаяПодсказка" id="107"/>
+												</Button>
+												<ButtonGroup name="ГруппаЦветСостав" id="108">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цвет состав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа цвет состав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаЦветСоставРасширеннаяПодсказка" id="109"/>
+													<ChildItems>
+														<Button name="ВставитьЦвет" id="110">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьЦвет</CommandName>
+															<ExtendedTooltip name="ВставитьЦветРасширеннаяПодсказка" id="111"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
+										<Popup name="ГруппаСочетаниеКлавиш" id="120">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сочетание клавиш</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сочетание клавиш</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСочетаниеКлавишРасширеннаяПодсказка" id="121"/>
+											<ChildItems>
+												<Button name="ВставитьСочетаниеКлавишОписание" id="122">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьСочетаниеКлавишОписание</CommandName>
+													<ExtendedTooltip name="ВставитьСочетаниеКлавишОписаниеРасширеннаяПодсказка" id="123"/>
+												</Button>
+												<ButtonGroup name="ГруппаСочетаниеКлавишСостав" id="124">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сочетание клавиш состав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сочетание клавиш состав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаСочетаниеКлавишСоставРасширеннаяПодсказка" id="125"/>
+													<ChildItems>
+														<Button name="ВставитьСочетаниеКлавиш" id="126">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьСочетаниеКлавиш</CommandName>
+															<ExtendedTooltip name="ВставитьСочетаниеКлавишРасширеннаяПодсказка" id="127"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
+										<Popup name="ГруппаРамка" id="128">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рамка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа рамка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаРамкаРасширеннаяПодсказка" id="129"/>
+											<ChildItems>
+												<Button name="ВставитьРамкаОписание" id="130">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьРамкаОписание</CommandName>
+													<ExtendedTooltip name="ВставитьРамкаОписаниеРасширеннаяПодсказка" id="131"/>
+												</Button>
+												<ButtonGroup name="ГруппаРамкаСостав" id="132">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа рамка состав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа рамка состав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаРамкаСоставРасширеннаяПодсказка" id="133"/>
+													<ChildItems>
+														<Button name="ВставитьРамка" id="134">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьРамка</CommandName>
+															<ExtendedTooltip name="ВставитьРамкаРасширеннаяПодсказка" id="135"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
 									</ChildItems>
 								</Popup>
 							</ChildItems>
-						</Popup>
+						</ButtonGroup>
 					</ChildItems>
-				</ButtonGroup>
+				</CommandBar>
+				<UsualGroup name="ГруппаНапоминания" id="141">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа напоминания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНапоминанияРасширеннаяПодсказка" id="142"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьНетВКэше" id="143">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:МФЦветНапоминаний</TextColor>
+							<Font ref="style:МФШрифтНапоминаний" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Надпись нет в кэше</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьНетВКэшеКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="НадписьНетВКэшеРасширеннаяПодсказка" id="145"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаИмяМакета" id="146">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа имя макета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмяМакетаРасширеннаяПодсказка" id="147"/>
+							<ChildItems>
+								<InputField name="ИмяМакета" id="148">
+									<DataPath>ИмяМакета</DataPath>
+									<TitleTextColor>style:МФЦветНапоминаний</TitleTextColor>
+									<TitleFont ref="style:МФШрифтНапоминаний" kind="StyleItem"/>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ИмяМакетаКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ИмяМакетаРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<LabelDecoration name="НадписьПервоеОткрытиеФормы" id="136">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FieldSelectionBackColor</TextColor>
+									<ContextMenu name="НадписьПервоеОткрытиеФормыКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="НадписьПервоеОткрытиеФормыРасширеннаяПодсказка" id="138"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="МакетОписанияМодификации" id="39">
+					<DataPath>МакетОписанияМодификаций</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
+					<ContextMenu name="МакетОписанияМодификацииКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="МакетОписанияМодификацииРасширеннаяПодсказка" id="41"/>
+				</InputField>
 			</ChildItems>
-		</CommandBar>
-		<InputField name="МакетОписанияМодификации" id="39">
-			<DataPath>МакетОписанияМодификации</DataPath>
-			<TitleLocation>None</TitleLocation>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<MultiLine>true</MultiLine>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<Font ref="style:NormalTextFont" faceName="Courier New" height="12" kind="StyleItem" scale="100"/>
-			<ContextMenu name="МакетОписанияМодификацииКонтекстноеМеню" id="40"/>
-			<ExtendedTooltip name="МакетОписанияМодификацииРасширеннаяПодсказка" id="41"/>
-		</InputField>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -499,7 +516,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="ПолноеИмяФормы" id="2">
+		<Attribute name="ИмяРедактируемойФормы" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -592,13 +609,24 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ВыборРазрешен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор разрешен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ИмяМакетаОписанияМодификаций" id="4">
+		<Attribute name="ИмяМакета" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Имя макета описания модификаций</v8:content>
+					<v8:content>Имя макета</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -609,11 +637,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="МакетОписанияМодификации" id="5">
+		<Attribute name="МакетОписанияМодификаций" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Макет описания модификации</v8:content>
+					<v8:content>Макет описания модификаций</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -679,6 +707,32 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="АдресКэшаФорм" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес кэша форм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РедактируемаяФормаОткрывалась" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактируемая форма открывалась</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОткрытьМодифицируемуюФорму" id="1">
@@ -699,26 +753,6 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьМодифицируемуюФорму</Action>
-			<Representation>TextPicture</Representation>
-		</Command>
-		<Command name="ПрочитатьМакет" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать макет</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Прочитать макет</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.OpenFile</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>ПрочитатьМакет</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="НовыйМакет" id="3">
@@ -975,26 +1009,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВставитьШаблон</Action>
-		</Command>
-		<Command name="ОбновитьИменаМакетов" id="22">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить имена макетов</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить имена макетов</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.Refresh</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>ОбновитьИменаМакетов</Action>
-			<Representation>Picture</Representation>
 		</Command>
 		<Command name="ВставитьСочетаниеКлавишОписание" id="17">
 			<Title>
