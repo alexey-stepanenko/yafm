@@ -433,6 +433,50 @@
 												</ButtonGroup>
 											</ChildItems>
 										</Popup>
+										<Popup name="ГруппаКартинка" id="151">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаКартинкаРасширеннаяПодсказка" id="152"/>
+											<ChildItems>
+												<Button name="ВставитьКартинкаОписание" id="153">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьКартинкаОписание</CommandName>
+													<ExtendedTooltip name="ВставитьКартинкаОписаниеРасширеннаяПодсказка" id="154"/>
+												</Button>
+												<ButtonGroup name="ГруппаКартинкаСостав" id="155">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа картинка состав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа картинка состав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаКартинкаСоставРасширеннаяПодсказка" id="156"/>
+													<ChildItems>
+														<Button name="ВставитьКартинка" id="157">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьКартинка</CommandName>
+															<ExtendedTooltip name="ВставитьКартинкаРасширеннаяПодсказка" id="158"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
 									</ChildItems>
 								</Popup>
 							</ChildItems>
@@ -1066,6 +1110,36 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Вставить рамка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьКартинкаОписание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка (с описанием)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинка описание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьКартинка" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинка</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВставитьШаблон</Action>
