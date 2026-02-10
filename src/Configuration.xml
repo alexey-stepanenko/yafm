@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Алексей А. Степаненко</Vendor>
-			<Version>1.1.1.5</Version>
+			<Version>1.1.1.6</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -429,6 +429,7 @@
 			<CommonModule>МФОбработчикЗначенияШрифт</CommonModule>
 			<CommonModule>МФОбработчикСтрокиДействиеКоманды</CommonModule>
 			<CommonModule>МФОбработчикСтрокиЗаголовокКоманды</CommonModule>
+			<CommonModule>МФОбработчикСтрокиКартинка</CommonModule>
 			<CommonModule>МФОбработчикСтрокиКоманда</CommonModule>
 			<CommonModule>МФОбработчикСтрокиПоследующийЭлемент</CommonModule>
 			<CommonModule>МФОбработчикСтрокиРамка</CommonModule>
