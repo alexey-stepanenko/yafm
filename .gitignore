@@ -2,5 +2,5 @@ tmp/
 infobase/
 releases/
 scripts/*.sh
-src/ConfigDumpInfo.xml
+src/cf/ConfigDumpInfo.xml
 tests/unit/ConfigDumpInfo.xml
