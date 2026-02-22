@@ -1,0 +1,11 @@
+{
+    "infobase": "<Путь к информационной базе для разработки>",
+    "infobase-user": "<Имя пользователя>",
+    "infobase-user-password": "<Пароль>",
+    "platform": "8.3.26",
+    "repo": "<Путь к локальному каталогу репозитория>",
+    "source": "src/cf",
+    "releases": "releases",
+    "tests": "tests/unit",
+    "test-extension-name": "ЮнитТесты"
+}

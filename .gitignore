@@ -1,6 +1,12 @@
-tmp/
+conf/*
+!conf/conf.template.json
+
 infobase/
+
 releases/
-scripts/*.sh
+
 src/cf/ConfigDumpInfo.xml
+
 tests/unit/ConfigDumpInfo.xml
+
+tmp/
