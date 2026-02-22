@@ -9,6 +9,10 @@
                 "listOfIncorrectFirstSymbol": "\\)|;|,\\s*\\S+|\\)\\s*;\\s*\\S+",
                 "checkLastSymbol": true,
                 "listOfIncorrectLastSymbol": "ИЛИ|И|OR|AND|\\+|-|/|%|\\*"
+            },
+            "Typo": {
+                "userWordsToIgnore": "юнит,билда,автотестов",
+                "caseInsensitive": true
             }
         }
     }
