@@ -11,7 +11,7 @@
                 "listOfIncorrectLastSymbol": "ИЛИ|И|OR|AND|\\+|-|/|%|\\*"
             },
             "Typo": {
-                "userWordsToIgnore": "юнит,билда,автотестов",
+                "userWordsToIgnore": "юнит,билда,автотестов,парсинга",
                 "caseInsensitive": true
             }
         }
