@@ -16,8 +16,16 @@
 				<BackColor>style:МФЦветОтсутствующихОбъектов</BackColor>
 				<ExtendedTooltip name="ФормаУдалитьОтсутствующиеОбъектыРасширеннаяПодсказка" id="52"/>
 			</Button>
+			<Button name="ФормаЗаполнитьКэш" id="53">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьКэш</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьКэшРасширеннаяПодсказка" id="54"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -320,6 +328,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УдалитьОтсутствующиеОбъекты</Action>
+		</Command>
+		<Command name="ЗаполнитьКэш" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить кэш</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить кэш</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКэш</Action>
 		</Command>
 	</Commands>
 </Form>

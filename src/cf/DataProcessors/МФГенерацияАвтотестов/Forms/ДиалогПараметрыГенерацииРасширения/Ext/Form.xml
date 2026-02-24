@@ -23,17 +23,32 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="ПутьКФайлуЗапуска1С" id="1">
-			<DataPath>ПутьКФайлуЗапуска1С</DataPath>
-			<ChoiceButton>true</ChoiceButton>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<TextEdit>false</TextEdit>
-			<ContextMenu name="ПутьКФайлуЗапуска1СКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПутьКФайлуЗапуска1СРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="StartChoice">ПутьКФайлуЗапуска1СНачалоВыбора</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="ГруппаПутьКФайлуЗапуска1С" id="24">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа путь к файлу запуска1 С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПутьКФайлуЗапуска1СРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="ПутьКФайлуЗапуска1С" id="1">
+					<DataPath>ПутьКФайлуЗапуска1С</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ПутьКФайлуЗапуска1СКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПутьКФайлуЗапуска1СРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ПутьКФайлуЗапуска1СНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаИнформационнаяБаза" id="4">
 			<Title>
 				<v8:item>
@@ -48,6 +63,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<United>false</United>
 			<ExtendedTooltip name="ГруппаИнформационнаяБазаРасширеннаяПодсказка" id="5"/>
 			<ChildItems>
 				<RadioButtonField name="ВидИнформационнойБазы" id="6">

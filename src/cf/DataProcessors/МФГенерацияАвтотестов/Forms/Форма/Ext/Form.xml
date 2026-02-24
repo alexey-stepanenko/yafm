@@ -54,8 +54,31 @@
 					<ContextMenu name="ТестируемыеФормыКонтекстноеМеню" id="4"/>
 					<AutoCommandBar name="ТестируемыеФормыКоманднаяПанель" id="5">
 						<ChildItems>
+							<Popup name="ТестируемыеФормыПодменюЗагрузить" id="87">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Загрузить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Тестируемые формы подменю загрузить</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ТестируемыеФормыПодменюЗагрузитьРасширеннаяПодсказка" id="88"/>
+								<ChildItems>
+									<Button name="ТестируемыеФормыЗагрузитьИзКэша" id="89">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьИзКэша</CommandName>
+										<ExtendedTooltip name="ТестируемыеФормыЗагрузитьИзКэшаРасширеннаяПодсказка" id="90"/>
+									</Button>
+								</ChildItems>
+							</Popup>
 							<Button name="ТестируемыеФормыЗагрузитьИзРасширения" id="78">
 								<Type>CommandBarButton</Type>
+								<Visible>false</Visible>
 								<CommandName>Form.Command.ЗагрузитьИзРасширения</CommandName>
 								<ExtendedTooltip name="ТестируемыеФормыЗагрузитьИзРасширенияРасширеннаяПодсказка" id="79"/>
 							</Button>
@@ -217,10 +240,10 @@
 											<ContextMenu name="ИмяТестируемойФормыКонтекстноеМеню" id="40"/>
 											<ExtendedTooltip name="ИмяТестируемойФормыРасширеннаяПодсказка" id="41"/>
 										</InputField>
-										<Button name="ОткрытьФорму" id="42">
+										<Button name="ПоказатьФорму" id="42">
 											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ПросмотретьФорму</CommandName>
-											<ExtendedTooltip name="ОткрытьФормуРасширеннаяПодсказка" id="43"/>
+											<CommandName>Form.Command.ПоказатьФорму</CommandName>
+											<ExtendedTooltip name="ПоказатьФормуРасширеннаяПодсказка" id="43"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -1101,24 +1124,24 @@
 			</ToolTip>
 			<Action>ЗаписатьВсеМодули</Action>
 		</Command>
-		<Command name="ПросмотретьФорму" id="3">
+		<Command name="ПоказатьФорму" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Просмотреть форму</v8:content>
+					<v8:content>Показать форму</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Просмотреть форму</v8:content>
+					<v8:content>Показать форму</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ПросмотретьФорму</Action>
+			<Action>ПоказатьФорму</Action>
 			<Representation>Picture</Representation>
 		</Command>
 		<Command name="СоздатьРасширениеСТестами" id="4">
@@ -1190,6 +1213,21 @@
 			</Picture>
 			<Action>ОбновитьРасширение</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗагрузитьИзКэша" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из кэша</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из кэша</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзКэша</Action>
 		</Command>
 	</Commands>
 </Form>
