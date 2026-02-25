@@ -97,11 +97,17 @@
             <CommonModule>_ОМ_МФСлужебный</CommonModule>
             <CommonModule>_ТестированиеГруппыФормы</CommonModule>
             <CommonModule>_ТестированиеДекорацииФормы</CommonModule>
+            <CommonModule>_ТестированиеКнопкиФормы</CommonModule>
+            <CommonModule>_ТестированиеПоляФормы</CommonModule>
+            <CommonModule>_ТестированиеТаблицыФормы</CommonModule>
             <CommonModule>МФЭлементыФормыПовтИсп</CommonModule>
             <CommonModule>ТестированиеСлужебныйВызовСервера</CommonModule>
             <CommonModule>ТестированиеСлужебныйКлиент</CommonModule>
-            <CommonForm>ТестированиеДекорацииФормы</CommonForm>
             <CommonForm>ТестированиеГруппыФормы</CommonForm>
+            <CommonForm>ТестированиеДекорацииФормы</CommonForm>
+            <CommonForm>ТестированиеКнопкиФормы</CommonForm>
+            <CommonForm>ТестированиеПоляФормы</CommonForm>
+            <CommonForm>ТестированиеТаблицыФормы</CommonForm>
         </ChildObjects>
     </Configuration>
 </MetaDataObject>
