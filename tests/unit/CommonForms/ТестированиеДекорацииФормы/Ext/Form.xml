@@ -2,25 +2,25 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<LabelDecoration name="ДекорацияНадпись" id="1">
+		<LabelDecoration name="Декорация_ВидНадпись" id="1">
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Декорация надпись</v8:content>
+					<v8:content>Декорация вид надпись</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ДекорацияНадписьКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ДекорацияНадписьРасширеннаяПодсказка" id="3"/>
+			<ContextMenu name="Декорация_ВидНадписьКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация_ВидНадписьРасширеннаяПодсказка" id="3"/>
 		</LabelDecoration>
-		<PictureDecoration name="ДекорацияКартинка" id="4">
+		<PictureDecoration name="Декорация_ВидКартинка" id="4">
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Декорация картинка</v8:content>
+					<v8:content>Декорация вид картинка</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ДекорацияКартинкаКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ДекорацияКартинкаРасширеннаяПодсказка" id="6"/>
+			<ContextMenu name="Декорация_ВидКартинкаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="Декорация_ВидКартинкаРасширеннаяПодсказка" id="6"/>
 		</PictureDecoration>
 	</ChildItems>
 	<Attributes/>
