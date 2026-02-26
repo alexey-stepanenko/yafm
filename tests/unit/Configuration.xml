@@ -108,6 +108,7 @@
             <CommonForm>ТестированиеКнопкиФормы</CommonForm>
             <CommonForm>ТестированиеПоляФормы</CommonForm>
             <CommonForm>ТестированиеТаблицыФормы</CommonForm>
+            <Catalog>Контрагенты</Catalog>
         </ChildObjects>
     </Configuration>
 </MetaDataObject>
