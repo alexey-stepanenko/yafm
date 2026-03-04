@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Заполнитель кэша</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияЗаголовок" id="35">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:МФЦветНапоминаний</TextColor>
+			<Font ref="style:МФШрифтНапоминаний" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При заполнении кэша текущие записи будут удалены.
+При проверке формы процедура заполнения кэша может прерваться
+из-за ошибки компляции формы.
+В этом случае необходимо нажать на кнопку "Остановить заполнение",
+добавить форму в список исключаемых и продолжить заполнение.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияЗаголовокКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ДекорацияЗаголовокРасширеннаяПодсказка" id="37"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаИсключаемыеФормы" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключаемые формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа исключаемые формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключаемые формы &gt;</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<ExtendedTooltip name="ГруппаИсключаемыеФормыРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Table name="ИсключаемыеФормы" id="1">
+					<Representation>List</Representation>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<HeightInTableRows>3</HeightInTableRows>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ИсключаемыеФормы</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИсключаемыеФормыКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="ИсключаемыеФормыКоманднаяПанель" id="3">
+						<ChildItems>
+							<Button name="ИсключаемыеФормыДобавитьТекущуюФормуВСписокИсключаемых" id="40">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДобавитьТекущуюФормуВСписокИсключаемых</CommandName>
+								<ExtendedTooltip name="ИсключаемыеФормыДобавитьТекущуюФормуВСписокИсключаемыхРасширеннаяПодсказка" id="41"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ИсключаемыеФормыРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="ИсключаемыеФормыСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>ИсключаемыеФормы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИсключаемыеФормыСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="ИсключаемыеФормыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИсключаемыеФормыСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>ИсключаемыеФормы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИсключаемыеФормыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ИсключаемыеФормыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИсключаемыеФормыУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>ИсключаемыеФормы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИсключаемыеФормыУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ИсключаемыеФормыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ИсключаемыеФормыИмяФормы" id="14">
+							<DataPath>ИсключаемыеФормы.ИмяФормы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИсключаемыеФормыИмяФормыКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ИсключаемыеФормыИмяФормыРасширеннаяПодсказка" id="16"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<ProgressBarField name="Прогресс" id="17">
+			<DataPath>Прогресс</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ShowPercent>true</ShowPercent>
+			<ContextMenu name="ПрогрессКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="19"/>
+		</ProgressBarField>
+		<UsualGroup name="ГруппаСтатус" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатусРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<LabelDecoration name="Статус" id="22">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="24"/>
+				</LabelDecoration>
+				<Button name="ДобавитьТекущуюФормуВСписокИсключаемых" id="27">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<CommandName>Form.Command.ДобавитьТекущуюФормуВСписокИсключаемых</CommandName>
+					<ExtendedTooltip name="ДобавитьТекущуюФормуВСписокИсключаемыхРасширеннаяПодсказка" id="28"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКнопки" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Button name="НачатьЗаполнение" id="31">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.НачатьЗаполнение</CommandName>
+					<ExtendedTooltip name="НачатьЗаполнениеРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<Button name="ПродолжитьЗаполнение" id="38">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПродолжитьЗаполнение</CommandName>
+					<ExtendedTooltip name="ПродолжитьЗаполнениеРасширеннаяПодсказка" id="39"/>
+				</Button>
+				<Button name="ОстановитьЗаполнение" id="33">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ОстановитьЗаполнение</CommandName>
+					<ExtendedTooltip name="ОстановитьЗаполнениеРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="ЗакрытьФорму" id="45">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+					<ExtendedTooltip name="ЗакрытьФормуРасширеннаяПодсказка" id="46"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИсключаемыеФормы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключаемые формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяФормы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя формы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Прогресс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьТекущуюФормуВСписокИсключаемых" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить текущую форму в список исключаемых</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить текущую форму в список исключаемых</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Form</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьТекущуюФормуВСписокИсключаемых</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="НачатьЗаполнение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьЗаполнение</Action>
+		</Command>
+		<Command name="ОстановитьЗаполнение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстановитьЗаполнение</Action>
+		</Command>
+		<Command name="ПродолжитьЗаполнение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьЗаполнение</Action>
+		</Command>
+		<Command name="ЗакрытьФорму" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьФорму</Action>
+		</Command>
+	</Commands>
+</Form>
