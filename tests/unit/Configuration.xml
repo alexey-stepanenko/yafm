@@ -100,7 +100,7 @@
             <CommonModule>_ТестированиеКнопкиФормы</CommonModule>
             <CommonModule>_ТестированиеПоляФормы</CommonModule>
             <CommonModule>_ТестированиеТаблицыФормы</CommonModule>
-            <CommonModule>МФЭлементыФормыПовтИсп</CommonModule>
+            <CommonModule>МФОбъектыФормыПовтИсп</CommonModule>
             <CommonModule>ТестированиеСлужебныйВызовСервера</CommonModule>
             <CommonModule>ТестированиеСлужебныйКлиент</CommonModule>
             <CommonForm>ТестированиеГруппыФормы</CommonForm>

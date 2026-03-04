@@ -19,7 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодификацияФорм</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.МФСинонимыСвойствЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.МФСинонимыСвойствОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФСтандартныеПеречисленияСлужебный</xr:Item>
 			</Content>
 		</Properties>
