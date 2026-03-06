@@ -272,13 +272,20 @@
 													<CommandName>Form.Command.ВставитьКоманда</CommandName>
 													<ExtendedTooltip name="ВставитьКомандаРасширеннаяПодсказка" id="81"/>
 												</Button>
+												<Button name="ВставитьСвойствоКоманды" id="159">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьСвойствоКоманды</CommandName>
+													<ExtendedTooltip name="ВставитьСвойствоКомандыРасширеннаяПодсказка" id="160"/>
+												</Button>
 												<Button name="ВставитьЗаголовокКоманды" id="82">
 													<Type>CommandBarButton</Type>
+													<Visible>false</Visible>
 													<CommandName>Form.Command.ВставитьЗаголовокКоманды</CommandName>
 													<ExtendedTooltip name="ВставитьЗаголовокКомандыРасширеннаяПодсказка" id="83"/>
 												</Button>
 												<Button name="ВставитьДействиеКоманды" id="84">
 													<Type>CommandBarButton</Type>
+													<Visible>false</Visible>
 													<CommandName>Form.Command.ВставитьДействиеКоманды</CommandName>
 													<ExtendedTooltip name="ВставитьДействиеКомандыРасширеннаяПодсказка" id="85"/>
 												</Button>
@@ -1140,6 +1147,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Вставить картинка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьСвойствоКоманды" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойство команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить свойство команды</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВставитьШаблон</Action>
