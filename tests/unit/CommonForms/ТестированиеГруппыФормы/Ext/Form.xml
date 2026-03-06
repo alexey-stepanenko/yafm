@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ГруппаФормы_ВидГруппаКнопок" id="24">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа формы вид группа кнопок</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа формы вид группа кнопок</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаФормы_ВидГруппаКнопокРасширеннаяПодсказка" id="25"/>
+			</ButtonGroup>
+			<Popup name="ГруппаФормы_ВидПодменю" id="35">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа формы вид подменю</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа формы вид подменю</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаФормы_ВидПодменюРасширеннаяПодсказка" id="36"/>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаФормы_ВидСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">ТаблицаФормы</AssociatedTableElementId>
+			<ExtendedTooltip name="ГруппаФормы_ВидСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаФормы_ВидСтраница" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы вид страница</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы вид страница</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаФормы_ВидСтраницаРасширеннаяПодсказка" id="4"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="ДекорацияКонтекстноеМеню" id="30">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация для тестирования контекстного меню</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияКонтекстноеМенюКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ДекорацияКонтекстноеМенюРасширеннаяПодсказка" id="32"/>
+		</LabelDecoration>
+		<Table name="ТаблицаФормы" id="5">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаФормы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаФормыКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ТаблицаФормыКоманднаяПанель" id="7"/>
+			<ExtendedTooltip name="ТаблицаФормыРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ТаблицаФормыСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>ТаблицаФормы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаФормыСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ТаблицаФормыСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаФормыСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>ТаблицаФормы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаФормыСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ТаблицаФормыСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаФормыУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>ТаблицаФормы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаФормыУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаФормыУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаФормыРеквизит1" id="18">
+					<DataPath>ТаблицаФормы.Реквизит1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФормыРеквизит1КонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ТаблицаФормыРеквизит1РасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<InputField name="ТаблицаФормыРеквизит2" id="21">
+					<DataPath>ТаблицаФормы.Реквизит2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаФормыРеквизит2КонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ТаблицаФормыРеквизит2РасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<ColumnGroup name="ГруппаФормы_ВидГруппаКолонок" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы вид группа колонок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы вид группа колонок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаФормы_ВидГруппаКолонокРасширеннаяПодсказка" id="27"/>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ГруппаФормы_ВидКоманднаяПанель" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаФормы_ВидКоманднаяПанельРасширеннаяПодсказка" id="29"/>
+		</CommandBar>
+		<UsualGroup name="ГруппаФормы_ВидОбычнаяГруппа" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид обычная группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа формы вид обычная группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаФормы_ВидОбычнаяГруппаРасширеннаяПодсказка" id="34"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаФормы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Реквизит1" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реквизит2" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,19 @@
+{
+    "$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+    "language": "ru",
+    "diagnostics": {
+        "overrideMinimumLSPDiagnosticLevel": "Warning",
+        "parameters": {
+            "IncorrectLineBreak": {
+                "checkFirstSymbol": true,
+                "listOfIncorrectFirstSymbol": "\\)|;|,\\s*\\S+|\\)\\s*;\\s*\\S+",
+                "checkLastSymbol": true,
+                "listOfIncorrectLastSymbol": "ИЛИ|И|OR|AND|\\+|-|/|%|\\*"
+            },
+            "Typo": {
+                "userWordsToIgnore": "юнит,билда,автотестов,парсинга",
+                "caseInsensitive": true
+            }
+        }
+    }
+}
