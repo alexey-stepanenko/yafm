@@ -48,7 +48,7 @@
             <ScriptVariant>Russian</ScriptVariant>
             <DefaultRoles/>
             <Vendor>Алексей А. Степаненко</Vendor>
-            <Version>1.1.1.7-rc5</Version>
+            <Version>1.1.1.7-rc6</Version>
             <UpdateCatalogAddress/>
             <IncludeHelpInContents>true</IncludeHelpInContents>
             <UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -389,7 +389,7 @@
             <CommonTemplate>КомпонентаПечатиШтрихкодовWindows64</CommonTemplate>
             <CommonTemplate>КомпонентаПечатиШтрихкодовLinux32</CommonTemplate>
             <CommonTemplate>КомпонентаПечатиШтрихкодовLinux64</CommonTemplate>
-            <CommonTemplate>МФСинонимыСвойствЭлементов</CommonTemplate>
+            <CommonTemplate>МФСинонимыСвойствОбъектов</CommonTemplate>
             <CommonTemplate>MANIFEST</CommonTemplate>
             <FilterCriterion>ДокументыКонтрагента</FilterCriterion>
             <CommonModule>БотКлиент</CommonModule>
@@ -411,6 +411,7 @@
             <CommonModule>МФИнструментыРазработчикаКлиентСерверПереопределяемый</CommonModule>
             <CommonModule>МФИнструментыРазработчикаПовтИсп</CommonModule>
             <CommonModule>МФКнопкаФормы</CommonModule>
+            <CommonModule>МФКомандаФормы</CommonModule>
             <CommonModule>МФОбработкаСтрокСлужебный</CommonModule>
             <CommonModule>МФОбработчикЗначенияДатаНеопределено</CommonModule>
             <CommonModule>МФОбработчикЗначенияКартинка</CommonModule>
@@ -434,12 +435,15 @@
             <CommonModule>МФОбработчикСтрокиРамка</CommonModule>
             <CommonModule>МФОбработчикСтрокиРеквизит</CommonModule>
             <CommonModule>МФОбработчикСтрокиРодительЭлемента</CommonModule>
+            <CommonModule>МФОбработчикСтрокиСвойствоКоманды</CommonModule>
             <CommonModule>МФОбработчикСтрокиСвойствоЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСобытиеЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСочетаниеКлавиш</CommonModule>
             <CommonModule>МФОбработчикСтрокиТипРеквизита</CommonModule>
             <CommonModule>МФОбработчикСтрокиЦвет</CommonModule>
             <CommonModule>МФОбработчикСтрокиЭлемент</CommonModule>
+            <CommonModule>МФОбъектыФормыПовтИсп</CommonModule>
+            <CommonModule>МФОбъектыФормыСлужебный</CommonModule>
             <CommonModule>МФПовтИсп</CommonModule>
             <CommonModule>МФПолеФормы</CommonModule>
             <CommonModule>МФСлужебный</CommonModule>
@@ -449,8 +453,6 @@
             <CommonModule>МФТестированиеКлиент</CommonModule>
             <CommonModule>МФТестированиеКлиентСерверПовтИсп</CommonModule>
             <CommonModule>МФШаблонМодуляСТестом</CommonModule>
-            <CommonModule>МФЭлементыФормыПовтИсп</CommonModule>
-            <CommonModule>МФЭлементыФормыСлужебный</CommonModule>
             <CommonModule>ОбменМобильныеВызовПК</CommonModule>
             <CommonModule>ОбменМобильныеОбщее</CommonModule>
             <CommonModule>ОбменМобильныеПереопределяемый</CommonModule>

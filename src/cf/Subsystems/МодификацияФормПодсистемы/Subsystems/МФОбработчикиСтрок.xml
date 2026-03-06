@@ -31,6 +31,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиЦвет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиЭлемент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиКартинка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФОбработчикСтрокиСвойствоКоманды</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
