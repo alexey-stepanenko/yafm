@@ -101,6 +101,7 @@
             <CommonModule>_ТестированиеПоляФормы</CommonModule>
             <CommonModule>_ТестированиеТаблицыФормы</CommonModule>
             <CommonModule>МФОбъектыФормыПовтИсп</CommonModule>
+            <CommonModule>ТестированиеСлужебный</CommonModule>
             <CommonModule>ТестированиеСлужебныйВызовСервера</CommonModule>
             <CommonModule>ТестированиеСлужебныйКлиент</CommonModule>
             <CommonForm>ТестированиеГруппыФормы</CommonForm>
