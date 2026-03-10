@@ -9,6 +9,14 @@
 			<DataPath>HTMLДокумент</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеHTMLДокументаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеHTMLДокументаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеHTMLДокументаПриИзменении</Event>
+				<Event name="DocumentComplete">ПолеФормы_ВидПолеHTMLДокументаДокументСформирован</Event>
+				<Event name="BeforeWrite">ПолеФормы_ВидПолеHTMLДокументаПередЗаписью</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеHTMLДокументаПередПечатью</Event>
+				<Event name="AfterWrite">ПолеФормы_ВидПолеHTMLДокументаПослеЗаписи</Event>
+				<Event name="OnClick">ПолеФормы_ВидПолеHTMLДокументаПриНажатии</Event>
+			</Events>
 		</HTMLDocumentField>
 		<PDFDocumentField name="ПолеФормы_ВидПолеPDFДокумента" id="4">
 			<DataPath>PDFДокумент</DataPath>
@@ -22,6 +30,10 @@
 				<ContextMenu name="ПолеФормы_ВидПолеPDFДокументаСостояниеПросмотраContextMenu" id="81"/>
 				<ExtendedTooltip name="ПолеФормы_ВидПолеPDFДокументаСостояниеПросмотраExtendedTooltip" id="82"/>
 			</ViewStatusAddition>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеPDFДокументаПриИзменении</Event>
+				<Event name="URLClick">ПолеФормы_ВидПолеPDFДокументаНажатиеНаНавигационнойСсылке</Event>
+			</Events>
 		</PDFDocumentField>
 		<InputField name="ПолеФормы_ВидПолеВвода" id="7">
 			<DataPath>РеквизитПоляВвода</DataPath>
@@ -31,26 +43,69 @@
 			<ChoiceForm>Catalog.Контрагенты.Form.ФормаВыбора</ChoiceForm>
 			<ContextMenu name="ПолеФормы_ВидПолеВводаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеВводаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеВводаПриИзменении</Event>
+				<Event name="EditTextChange">ПолеФормы_ВидПолеВводаИзменениеТекстаРедактирования</Event>
+				<Event name="AutoComplete">ПолеФормы_ВидПолеВводаАвтоПодбор</Event>
+				<Event name="StartChoice">ПолеФормы_ВидПолеВводаНачалоВыбора</Event>
+				<Event name="MultipleValueURLProcessing">ПолеФормы_ВидПолеВводаОбработкаНавигационнойСсылкиМножественногоЗначения</Event>
+				<Event name="MultipleValuesDelete">ПолеФормы_ВидПолеВводаУдалениеМножественныхЗначений</Event>
+				<Event name="Tuning">ПолеФормы_ВидПолеВводаРегулирование</Event>
+				<Event name="MultipleValuesAdd">ПолеФормы_ВидПолеВводаДобавлениеМножественныхЗначений</Event>
+				<Event name="Opening">ПолеФормы_ВидПолеВводаОткрытие</Event>
+				<Event name="Creating">ПолеФормы_ВидПолеВводаСоздание</Event>
+				<Event name="StartListChoice">ПолеФормы_ВидПолеВводаНачалоВыбораИзСписка</Event>
+				<Event name="Clearing">ПолеФормы_ВидПолеВводаОчистка</Event>
+				<Event name="TextEditEnd">ПолеФормы_ВидПолеВводаОкончаниеВводаТекста</Event>
+				<Event name="MultipleValueOpening">ПолеФормы_ВидПолеВводаОткрытиеМножественногоЗначения</Event>
+				<Event name="ChoiceProcessing">ПолеФормы_ВидПолеВводаОбработкаВыбора</Event>
+				<Event name="CommandGenerateProcessing">ПолеФормы_ВидПолеВводаОбработкаФормированияКоманд</Event>
+			</Events>
 		</InputField>
 		<GeographicalSchemaField name="ПолеФормы_ВидПолеГеографическойСхемы" id="10">
 			<DataPath>ГеографическаяСхема</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеГеографическойСхемыКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеГеографическойСхемыРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеГеографическойСхемыПриИзменении</Event>
+				<Event name="DetailProcessing">ПолеФормы_ВидПолеГеографическойСхемыОбработкаРасшифровки</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеГеографическойСхемыПередПечатью</Event>
+			</Events>
 		</GeographicalSchemaField>
 		<GraphicalSchemaField name="ПолеФормы_ВидПолеГрафическойСхемы" id="13">
 			<DataPath>ГрафическаяСхема</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеГрафическойСхемыКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеГрафическойСхемыРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеГрафическойСхемыПриИзменении</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеГрафическойСхемыВыбор</Event>
+				<Event name="AfterWrite">ПолеФормы_ВидПолеГрафическойСхемыПослеЗаписи</Event>
+				<Event name="OnActivate">ПолеФормы_ВидПолеГрафическойСхемыПриАктивизации</Event>
+				<Event name="BeforeWrite">ПолеФормы_ВидПолеГрафическойСхемыПередЗаписью</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеГрафическойСхемыПередПечатью</Event>
+			</Events>
 		</GraphicalSchemaField>
 		<DendrogramField name="ПолеФормы_ВидПолеДендрограммы" id="16">
 			<DataPath>Дендрограмма</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеДендрограммыКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеДендрограммыРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеДендрограммыПриИзменении</Event>
+				<Event name="DetailProcessing">ПолеФормы_ВидПолеДендрограммыОбработкаРасшифровки</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеДендрограммыВыбор</Event>
+			</Events>
 		</DendrogramField>
 		<ChartField name="ПолеФормы_ВидПолеДиаграммы" id="19">
 			<DataPath>Диаграмма</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеДиаграммыКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеДиаграммыРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеДиаграммыПриИзменении</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеДиаграммыВыбор</Event>
+				<Event name="DetailProcessing">ПолеФормы_ВидПолеДиаграммыОбработкаРасшифровки</Event>
+				<Event name="OnActivate">ПолеФормы_ВидПолеДиаграммыПриАктивизации</Event>
+				<Event name="OnValueEdit">ПолеФормы_ВидПолеДиаграммыПриРедактированииЗначения</Event>
+			</Events>
 		</ChartField>
 		<GanttChartField name="ПолеФормы_ВидПолеДиаграммыГанта" id="22">
 			<DataPath>ДиаграммаГанта</DataPath>
@@ -109,68 +164,170 @@
 					</InputField>
 				</ChildItems>
 			</Table>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеДиаграммыГантаПриИзменении</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеДиаграммыГантаВыбор</Event>
+				<Event name="DetailProcessing">ПолеФормы_ВидПолеДиаграммыГантаОбработкаРасшифровки</Event>
+				<Event name="BeforeCollapse">ПолеФормы_ВидПолеДиаграммыГантаПередСворачиванием</Event>
+				<Event name="OnActivateInterval">ПолеФормы_ВидПолеДиаграммыГантаПриАктивизацииИнтервала</Event>
+				<Event name="OnActivateValue">ПолеФормы_ВидПолеДиаграммыГантаПриАктивизацииЗначения</Event>
+				<Event name="BeforeExpand">ПолеФормы_ВидПолеДиаграммыГантаПередРазворачиванием</Event>
+				<Event name="OnIntervalEditEnd">ПолеФормы_ВидПолеДиаграммыГантаПриОкончанииРедактированияИнтервала</Event>
+			</Events>
 		</GanttChartField>
 		<ProgressBarField name="ПолеФормы_ВидПолеИндикатора" id="44">
 			<DataPath>РеквизитЧисло</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеИндикатораКонтекстноеМеню" id="45"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеИндикатораРасширеннаяПодсказка" id="46"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеИндикатораПриИзменении</Event>
+			</Events>
 		</ProgressBarField>
 		<CalendarField name="ПолеФормы_ВидПолеКалендаря" id="47">
 			<DataPath>РеквизитДата</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеКалендаряКонтекстноеМеню" id="48"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеКалендаряРасширеннаяПодсказка" id="49"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеКалендаряПриИзменении</Event>
+				<Event name="DragCheck">ПолеФормы_ВидПолеКалендаряПроверкаПеретаскивания</Event>
+				<Event name="OnPeriodOutput">ПолеФормы_ВидПолеКалендаряПриВыводеПериода</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеКалендаряВыбор</Event>
+				<Event name="OnActivateDate">ПолеФормы_ВидПолеКалендаряПриАктивизацииДаты</Event>
+				<Event name="DragStart">ПолеФормы_ВидПолеКалендаряНачалоПеретаскивания</Event>
+				<Event name="Drag">ПолеФормы_ВидПолеКалендаряПеретаскивание</Event>
+				<Event name="DragEnd">ПолеФормы_ВидПолеКалендаряОкончаниеПеретаскивания</Event>
+			</Events>
 		</CalendarField>
 		<PictureField name="ПолеФормы_ВидПолеКартинки" id="50">
 			<DataPath>РеквизитЧисло</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеКартинкиКонтекстноеМеню" id="51"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеКартинкиРасширеннаяПодсказка" id="52"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеКартинкиПриИзменении</Event>
+				<Event name="DragCheck">ПолеФормы_ВидПолеКартинкиПроверкаПеретаскивания</Event>
+				<Event name="DragStart">ПолеФормы_ВидПолеКартинкиНачалоПеретаскивания</Event>
+				<Event name="Drag">ПолеФормы_ВидПолеКартинкиПеретаскивание</Event>
+				<Event name="Click">ПолеФормы_ВидПолеКартинкиНажатие</Event>
+				<Event name="DragEnd">ПолеФормы_ВидПолеКартинкиОкончаниеПеретаскивания</Event>
+			</Events>
 		</PictureField>
 		<LabelField name="ПолеФормы_ВидПолеНадписи" id="53">
 			<DataPath>РеквизитСтрока</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеНадписиКонтекстноеМеню" id="54"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеНадписиРасширеннаяПодсказка" id="55"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеНадписиПриИзменении</Event>
+				<Event name="URLProcessing">ПолеФормы_ВидПолеНадписиОбработкаНавигационнойСсылки</Event>
+				<Event name="Click">ПолеФормы_ВидПолеНадписиНажатие</Event>
+			</Events>
 		</LabelField>
 		<RadioButtonField name="ПолеФормы_ВидПолеПереключателя" id="56">
 			<DataPath>РеквизитЧисло</DataPath>
 			<RadioButtonType>Auto</RadioButtonType>
 			<ContextMenu name="ПолеФормы_ВидПолеПереключателяКонтекстноеМеню" id="57"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеПереключателяРасширеннаяПодсказка" id="58"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеПереключателяПриИзменении</Event>
+			</Events>
 		</RadioButtonField>
 		<PeriodField name="ПолеФормы_ВидПолеПериода" id="59">
 			<DataPath>СтандартныйПериод</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеПериодаКонтекстноеМеню" id="60"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеПериодаРасширеннаяПодсказка" id="61"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеПериодаПриИзменении</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеПериодаВыбор</Event>
+			</Events>
 		</PeriodField>
 		<PlannerField name="ПолеФормы_ВидПолеПланировщика" id="62">
 			<DataPath>Планировщик</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеПланировщикаКонтекстноеМеню" id="63"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеПланировщикаРасширеннаяПодсказка" id="64"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеПланировщикаПриИзменении</Event>
+				<Event name="DragCheck">ПолеФормы_ВидПолеПланировщикаПроверкаПеретаскивания</Event>
+				<Event name="BeforeCollapseDimensionItem">ПолеФормы_ВидПолеПланировщикаПередСворачиваниемЭлементаИзмерения</Event>
+				<Event name="TimeScaleItemClick">ПолеФормы_ВидПолеПланировщикаНажатиеНаЭлементеШкалыВремени</Event>
+				<Event name="BeforeCreate">ПолеФормы_ВидПолеПланировщикаПередСозданием</Event>
+				<Event name="InsideDragCheck">ПолеФормы_ВидПолеПланировщикаПроверкаПеретаскиванияВнутри</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеПланировщикаПередПечатью</Event>
+				<Event name="DimensionItemClick">ПолеФормы_ВидПолеПланировщикаНажатиеНаЭлементеИзмерения</Event>
+				<Event name="OnCurrentRepresentationPeriodChange">ПолеФормы_ВидПолеПланировщикаПриСменеТекущегоПериодаОтображения</Event>
+				<Event name="OnEditEnd">ПолеФормы_ВидПолеПланировщикаПриОкончанииРедактирования</Event>
+				<Event name="WrappedTimeScaleHeaderClick">ПолеФормы_ВидПолеПланировщикаНажатиеНаПеренесенномЗаголовкеШкалыВремени</Event>
+				<Event name="DragStart">ПолеФормы_ВидПолеПланировщикаНачалоПеретаскивания</Event>
+				<Event name="BeforeDelete">ПолеФормы_ВидПолеПланировщикаПередУдалением</Event>
+				<Event name="BeforeExpandDimensionItem">ПолеФормы_ВидПолеПланировщикаПередРазворачиваниемЭлементаИзмерения</Event>
+				<Event name="BeforeStartEdit">ПолеФормы_ВидПолеПланировщикаПередНачаломРедактирования</Event>
+				<Event name="Drag">ПолеФормы_ВидПолеПланировщикаПеретаскивание</Event>
+				<Event name="CommandGenerateProcessing">ПолеФормы_ВидПолеПланировщикаОбработкаФормированияКоманд</Event>
+				<Event name="BeforeStartQuickEdit">ПолеФормы_ВидПолеПланировщикаПередНачаломБыстрогоРедактирования</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеПланировщикаВыбор</Event>
+				<Event name="OnActivate">ПолеФормы_ВидПолеПланировщикаПриАктивизации</Event>
+				<Event name="URLClick">ПолеФормы_ВидПолеПланировщикаНажатиеНаНавигационнойСсылке</Event>
+				<Event name="DragEnd">ПолеФормы_ВидПолеПланировщикаОкончаниеПеретаскивания</Event>
+				<Event name="PlannerActionClick">ПолеФормы_ВидПолеПланировщикаНажатиеНаДействиеПланировщика</Event>
+			</Events>
 		</PlannerField>
 		<TrackBarField name="ПолеФормы_ВидПолеПолосыРегулирования" id="65">
 			<DataPath>РеквизитЧисло</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеПолосыРегулированияКонтекстноеМеню" id="66"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеПолосыРегулированияРасширеннаяПодсказка" id="67"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеПолосыРегулированияПриИзменении</Event>
+			</Events>
 		</TrackBarField>
 		<SpreadSheetDocumentField name="ПолеФормы_ВидПолеТабличногоДокумента" id="68">
 			<DataPath>ТабличныйДокумент</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеТабличногоДокументаКонтекстноеМеню" id="69"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеТабличногоДокументаРасширеннаяПодсказка" id="70"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеТабличногоДокументаПриИзменении</Event>
+				<Event name="URLProcessing">ПолеФормы_ВидПолеТабличногоДокументаОбработкаНавигационнойСсылки</Event>
+				<Event name="AdditionalDetailProcessing">ПолеФормы_ВидПолеТабличногоДокументаОбработкаДополнительнойРасшифровки</Event>
+				<Event name="DragCheck">ПолеФормы_ВидПолеТабличногоДокументаПроверкаПеретаскивания</Event>
+				<Event name="OnActivate">ПолеФормы_ВидПолеТабличногоДокументаПриАктивизации</Event>
+				<Event name="Selection">ПолеФормы_ВидПолеТабличногоДокументаВыбор</Event>
+				<Event name="DetailProcessing">ПолеФормы_ВидПолеТабличногоДокументаОбработкаРасшифровки</Event>
+				<Event name="OnChangeAreaContent">ПолеФормы_ВидПолеТабличногоДокументаПриИзмененииСодержимогоОбласти</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеТабличногоДокументаПередПечатью</Event>
+				<Event name="DragStart">ПолеФормы_ВидПолеТабличногоДокументаНачалоПеретаскивания</Event>
+				<Event name="Drag">ПолеФормы_ВидПолеТабличногоДокументаПеретаскивание</Event>
+				<Event name="AfterWrite">ПолеФормы_ВидПолеТабличногоДокументаПослеЗаписи</Event>
+				<Event name="BeforeWrite">ПолеФормы_ВидПолеТабличногоДокументаПередЗаписью</Event>
+				<Event name="DragEnd">ПолеФормы_ВидПолеТабличногоДокументаОкончаниеПеретаскивания</Event>
+			</Events>
 		</SpreadSheetDocumentField>
 		<TextDocumentField name="ПолеФормы_ВидПолеТекстовогоДокумента" id="71">
 			<DataPath>ТекстовыйДокумент</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеТекстовогоДокументаКонтекстноеМеню" id="72"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеТекстовогоДокументаРасширеннаяПодсказка" id="73"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеТекстовогоДокументаПриИзменении</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеТекстовогоДокументаПередПечатью</Event>
+				<Event name="BeforeWrite">ПолеФормы_ВидПолеТекстовогоДокументаПередЗаписью</Event>
+				<Event name="AfterWrite">ПолеФормы_ВидПолеТекстовогоДокументаПослеЗаписи</Event>
+			</Events>
 		</TextDocumentField>
 		<CheckBoxField name="ПолеФормы_ВидПолеФлажка" id="74">
 			<DataPath>РеквизитБулево</DataPath>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПолеФормы_ВидПолеФлажкаКонтекстноеМеню" id="75"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеФлажкаРасширеннаяПодсказка" id="76"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеФлажкаПриИзменении</Event>
+			</Events>
 		</CheckBoxField>
 		<FormattedDocumentField name="ПолеФормы_ВидПолеФорматированногоДокумента" id="77">
 			<DataPath>ФорматированныйДокумент</DataPath>
 			<ContextMenu name="ПолеФормы_ВидПолеФорматированногоДокументаКонтекстноеМеню" id="78"/>
 			<ExtendedTooltip name="ПолеФормы_ВидПолеФорматированногоДокументаРасширеннаяПодсказка" id="79"/>
+			<Events>
+				<Event name="OnChange">ПолеФормы_ВидПолеФорматированногоДокументаПриИзменении</Event>
+				<Event name="BeforePrint">ПолеФормы_ВидПолеФорматированногоДокументаПередПечатью</Event>
+				<Event name="AfterWrite">ПолеФормы_ВидПолеФорматированногоДокументаПослеЗаписи</Event>
+				<Event name="BeforeWrite">ПолеФормы_ВидПолеФорматированногоДокументаПередЗаписью</Event>
+			</Events>
 		</FormattedDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -489,5 +646,31 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="СобытияТестируемогоЭлемента" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События тестируемого элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="ИмяТестируемогоРеквизита">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>
