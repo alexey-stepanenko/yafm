@@ -53,7 +53,7 @@
 		// BSLLS:NestedFunctionInParameters-off
 		Результат.Вставить(
 			"Идентификатор", 
-			ВРег(Результат.Имя)
+			МФОбработкаСтрокСлужебный.Идентификатор(Результат.Имя)
 		);
 		// BSLLS:NestedFunctionInParameters-on
 	КонецЕсли;

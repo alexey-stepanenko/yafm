@@ -437,6 +437,8 @@
             <CommonModule>МФОбработчикСтрокиРодительЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСвойствоКоманды</CommonModule>
             <CommonModule>МФОбработчикСтрокиСвойствоЭлемента</CommonModule>
+            <CommonModule>МФОбработчикСтрокиСвязиПараметровВыбора</CommonModule>
+            <CommonModule>МФОбработчикСтрокиСвязьПараметраВыбора</CommonModule>
             <CommonModule>МФОбработчикСтрокиСобытиеЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСочетаниеКлавиш</CommonModule>
             <CommonModule>МФОбработчикСтрокиТипРеквизита</CommonModule>
