@@ -484,6 +484,55 @@
 												</ButtonGroup>
 											</ChildItems>
 										</Popup>
+										<Popup name="ГруппаСвязиПараметровВыбора" id="161">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Связи параметров выбора</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа связи параметров выбора</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСвязиПараметровВыбораРасширеннаяПодсказка" id="162"/>
+											<ChildItems>
+												<Button name="ВставитьСвязиПараметровВыбораОписание" id="163">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВставитьСвязиПараметровВыбораОписание</CommandName>
+													<ExtendedTooltip name="ВставитьСвязиПараметровВыбораОписаниеРасширеннаяПодсказка" id="164"/>
+												</Button>
+												<ButtonGroup name="ГруппаСвязиПараметровВыбораСостав" id="165">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа связи параметров выбора состав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа связи параметров выбора состав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаСвязиПараметровВыбораСоставРасширеннаяПодсказка" id="166"/>
+													<ChildItems>
+														<Button name="ВставитьСвязиПараметровВыбора" id="167">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьСвязиПараметровВыбора</CommandName>
+															<ExtendedTooltip name="ВставитьСвязиПараметровВыбораРасширеннаяПодсказка" id="168"/>
+														</Button>
+														<Button name="ВставитьСвязьПараметраВыбора" id="169">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьСвязьПараметраВыбора</CommandName>
+															<ExtendedTooltip name="ВставитьСвязьПараметраВыбораРасширеннаяПодсказка" id="170"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
 									</ChildItems>
 								</Popup>
 							</ChildItems>
@@ -1162,6 +1211,51 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Вставить свойство команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьСвязиПараметровВыбораОписание" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связи параметров выбора (с описанием)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить связи параметров выбора описание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьСвязиПараметровВыбора" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связи параметров выбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить связи параметров выбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВставитьШаблон</Action>
+		</Command>
+		<Command name="ВставитьСвязьПараметраВыбора" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь параметра выбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить связь параметра выбора</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВставитьШаблон</Action>
