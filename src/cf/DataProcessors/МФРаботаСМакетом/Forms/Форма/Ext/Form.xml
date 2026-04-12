@@ -59,6 +59,13 @@
 								<Event name="StartChoice">ПолноеИмяФормыНачалоВыбора</Event>
 							</Events>
 						</InputField>
+						<InputField name="СсылкаНаОбъект" id="171">
+							<DataPath>СсылкаНаОбъект</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СсылкаНаОбъектКонтекстноеМеню" id="172"/>
+							<ExtendedTooltip name="СсылкаНаОбъектРасширеннаяПодсказка" id="173"/>
+						</InputField>
 						<Button name="ОткрытьМодифицируемуюФорму" id="33">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ОткрытьМодифицируемуюФорму</CommandName>
@@ -831,6 +838,17 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СсылкаНаОбъект" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 	</Attributes>
