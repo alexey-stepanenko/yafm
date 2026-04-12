@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<Table name="ТаблицаФормы" id="1">
 			<Representation>List</Representation>
@@ -36,6 +39,31 @@
 				<ContextMenu name="ТаблицаФормыУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="ТаблицаФормыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ТаблицаФормыПриОкончанииРедактирования</Event>
+				<Event name="DragCheck">ТаблицаФормыПроверкаПеретаскивания</Event>
+				<Event name="ValueChoice">ТаблицаФормыВыборЗначения</Event>
+				<Event name="Selection">ТаблицаФормыВыбор</Event>
+				<Event name="BeforeAddRow">ТаблицаФормыПередНачаломДобавления</Event>
+				<Event name="OnCurrentParentChange">ТаблицаФормыПриСменеТекущегоРодителя</Event>
+				<Event name="BeforeDeleteRow">ТаблицаФормыПередУдалением</Event>
+				<Event name="BeforeEditEnd">ТаблицаФормыПередОкончаниемРедактирования</Event>
+				<Event name="OnActivateRow">ТаблицаФормыПриАктивизацииСтроки</Event>
+				<Event name="DragStart">ТаблицаФормыНачалоПеретаскивания</Event>
+				<Event name="OnActivateField">ТаблицаФормыПриАктивизацииПоля</Event>
+				<Event name="BeforeExpand">ТаблицаФормыПередРазворачиванием</Event>
+				<Event name="Drag">ТаблицаФормыПеретаскивание</Event>
+				<Event name="ChoiceProcessing">ТаблицаФормыОбработкаВыбора</Event>
+				<Event name="BeforeCollapse">ТаблицаФормыПередСворачиванием</Event>
+				<Event name="BeforeRowChange">ТаблицаФормыПередНачаломИзменения</Event>
+				<Event name="OnStartEdit">ТаблицаФормыПриНачалеРедактирования</Event>
+				<Event name="DragEnd">ТаблицаФормыОкончаниеПеретаскивания</Event>
+				<Event name="NewWriteProcessing">ТаблицаФормыОбработкаЗаписиНового</Event>
+				<Event name="AfterDeleteRow">ТаблицаФормыПослеУдаления</Event>
+				<Event name="OnActivateCell">ТаблицаФормыПриАктивизацииЯчейки</Event>
+				<Event name="OnChange">ТаблицаФормыПриИзменении</Event>
+				<Event name="RefreshRequestProcessing">ТаблицаФормыОбработкаЗапросаОбновления</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="ТаблицаРеквизит1" id="14">
 					<DataPath>Таблица.Реквизит1</DataPath>
@@ -86,5 +114,31 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="СобытияТестируемогоЭлемента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События тестируемого элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="ИмяТестируемогоРеквизита">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>

@@ -48,7 +48,7 @@
             <ScriptVariant>Russian</ScriptVariant>
             <DefaultRoles/>
             <Vendor>Алексей А. Степаненко</Vendor>
-            <Version>1.1.1.7</Version>
+            <Version>1.1.1.8</Version>
             <UpdateCatalogAddress/>
             <IncludeHelpInContents>true</IncludeHelpInContents>
             <UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -437,6 +437,8 @@
             <CommonModule>МФОбработчикСтрокиРодительЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСвойствоКоманды</CommonModule>
             <CommonModule>МФОбработчикСтрокиСвойствоЭлемента</CommonModule>
+            <CommonModule>МФОбработчикСтрокиСвязиПараметровВыбора</CommonModule>
+            <CommonModule>МФОбработчикСтрокиСвязьПараметраВыбора</CommonModule>
             <CommonModule>МФОбработчикСтрокиСобытиеЭлемента</CommonModule>
             <CommonModule>МФОбработчикСтрокиСочетаниеКлавиш</CommonModule>
             <CommonModule>МФОбработчикСтрокиТипРеквизита</CommonModule>

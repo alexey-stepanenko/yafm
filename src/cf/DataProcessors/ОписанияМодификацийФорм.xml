@@ -29,6 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Template>Документ_Заказ_ФормаДокумента</Template>
+			<Template>Обработка_СписокАктивныхПользователей_ФормаСпискаАктивныхПользователей</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
