@@ -35,6 +35,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФМетаданныеОбщие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФГенерацияАвтотестов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МФГенераторПротоколаПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МФКонструкторМодификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФЭлементы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФРеквизиты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФМодули</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -354,29 +354,33 @@
             <StyleItem>ЦветТекстаОшибочногоСостояния</StyleItem>
             <StyleItem>ЦветТекстаСущественныхИзмененийДанных</StyleItem>
             <StyleItem>ШрифтВажнойИнформации</StyleItem>
-            <CommonPicture>Позвонить</CommonPicture>
+            <CommonPicture>NFC</CommonPicture>
+            <CommonPicture>ВыделитьВажное</CommonPicture>
+            <CommonPicture>КоллекцияВидыАктивныхПользователей</CommonPicture>
+            <CommonPicture>КоллекцияВидыСобытийЖурналаРегистрации</CommonPicture>
+            <CommonPicture>КоллекцияДляПомеченныхНаУдалениеОбъектов</CommonPicture>
+            <CommonPicture>Контрагент</CommonPicture>
+            <CommonPicture>Копировать</CommonPicture>
+            <CommonPicture>МФКоманды</CommonPicture>
+            <CommonPicture>МФМетаданныеОбщие</CommonPicture>
+            <CommonPicture>МФМодули</CommonPicture>
+            <CommonPicture>МФРеквизиты</CommonPicture>
+            <CommonPicture>МФЭлементы</CommonPicture>
+            <CommonPicture>ОткрытьХранимыйФайл</CommonPicture>
+            <CommonPicture>ОтправитьСМС</CommonPicture>
+            <CommonPicture>ПланировщикПеренестиНаСледующийДень</CommonPicture>
+            <CommonPicture>ПодсистемаЗакупки</CommonPicture>
+            <CommonPicture>ПодсистемаМодификацияФорм</CommonPicture>
             <CommonPicture>ПодсистемаПредприятие</CommonPicture>
             <CommonPicture>ПодсистемаПродажи</CommonPicture>
             <CommonPicture>ПодсистемаТоварныеЗапасы</CommonPicture>
             <CommonPicture>ПодсистемаФинансы</CommonPicture>
-            <CommonPicture>КоллекцияВидыАктивныхПользователей</CommonPicture>
-            <CommonPicture>КоллекцияВидыСобытийЖурналаРегистрации</CommonPicture>
-            <CommonPicture>КоллекцияДляПомеченныхНаУдалениеОбъектов</CommonPicture>
+            <CommonPicture>Позвонить</CommonPicture>
             <CommonPicture>ПолнотекстовыйПоискДалее</CommonPicture>
             <CommonPicture>ПолнотекстовыйПоискНазад</CommonPicture>
-            <CommonPicture>ОткрытьХранимыйФайл</CommonPicture>
-            <CommonPicture>ПодсистемаЗакупки</CommonPicture>
             <CommonPicture>ПроверитьПочту</CommonPicture>
             <CommonPicture>СписокЗаказов</CommonPicture>
             <CommonPicture>ШтрихКод</CommonPicture>
-            <CommonPicture>ВыделитьВажное</CommonPicture>
-            <CommonPicture>ОтправитьСМС</CommonPicture>
-            <CommonPicture>ПланировщикПеренестиНаСледующийДень</CommonPicture>
-            <CommonPicture>Контрагент</CommonPicture>
-            <CommonPicture>NFC</CommonPicture>
-            <CommonPicture>Копировать</CommonPicture>
-            <CommonPicture>ПодсистемаМодификацияФорм</CommonPicture>
-            <CommonPicture>МФМетаданныеОбщие</CommonPicture>
             <SessionParameter>ТекущийПользователь</SessionParameter>
             <SessionParameter>ЯщикIMAP</SessionParameter>
             <Role>Администратор</Role>
@@ -451,6 +455,7 @@
             <CommonModule>МФСлужебный</CommonModule>
             <CommonModule>МФСтандартныеПеречисленияСлужебный</CommonModule>
             <CommonModule>МФТаблицаФормы</CommonModule>
+            <CommonModule>МФТестирование</CommonModule>
             <CommonModule>МФТестированиеВызовСервера</CommonModule>
             <CommonModule>МФТестированиеКлиент</CommonModule>
             <CommonModule>МФТестированиеКлиентСерверПовтИсп</CommonModule>
@@ -616,6 +621,7 @@
             <DataProcessor>ОписанияМодификацийФорм</DataProcessor>
             <DataProcessor>МФРаботаСМакетом</DataProcessor>
             <DataProcessor>МФГенерацияАвтотестов</DataProcessor>
+            <DataProcessor>МФКонструкторМодификации</DataProcessor>
             <InformationRegister>КурсыВалют</InformationRegister>
             <InformationRegister>ЦеныТоваров</InformationRegister>
             <InformationRegister>СостояниеВходящихПисем</InformationRegister>
