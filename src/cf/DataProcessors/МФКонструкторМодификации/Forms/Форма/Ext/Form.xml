@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -135,10 +136,74 @@
 											</Picture>
 											<ExtendedTooltip name="СтраницаЭлементыРасширеннаяПодсказка" id="112"/>
 											<ChildItems>
-												<LabelDecoration name="Декорация1" id="113">
-													<ContextMenu name="Декорация1КонтекстноеМеню" id="114"/>
-													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="115"/>
-												</LabelDecoration>
+												<Table name="ЭлементыРедактируемойФормы" id="145">
+													<Representation>Tree</Representation>
+													<Header>false</Header>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>ЭлементыРедактируемойФормы</DataPath>
+													<ContextMenu name="ЭлементыРедактируемойФормыКонтекстноеМеню" id="146"/>
+													<AutoCommandBar name="ЭлементыРедактируемойФормыКоманднаяПанель" id="147"/>
+													<ExtendedTooltip name="ЭлементыРедактируемойФормыРасширеннаяПодсказка" id="148"/>
+													<SearchStringAddition name="ЭлементыРедактируемойФормыСтрокаПоиска" id="149">
+														<AdditionSource>
+															<Item>ЭлементыРедактируемойФормы</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ЭлементыРедактируемойФормыСтрокаПоискаКонтекстноеМеню" id="150"/>
+														<ExtendedTooltip name="ЭлементыРедактируемойФормыСтрокаПоискаРасширеннаяПодсказка" id="151"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ЭлементыРедактируемойФормыСостояниеПросмотра" id="152">
+														<AdditionSource>
+															<Item>ЭлементыРедактируемойФормы</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ЭлементыРедактируемойФормыСостояниеПросмотраКонтекстноеМеню" id="153"/>
+														<ExtendedTooltip name="ЭлементыРедактируемойФормыСостояниеПросмотраРасширеннаяПодсказка" id="154"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ЭлементыРедактируемойФормыУправлениеПоиском" id="155">
+														<AdditionSource>
+															<Item>ЭлементыРедактируемойФормы</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ЭлементыРедактируемойФормыУправлениеПоискомКонтекстноеМеню" id="156"/>
+														<ExtendedTooltip name="ЭлементыРедактируемойФормыУправлениеПоискомРасширеннаяПодсказка" id="157"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<ColumnGroup name="ЭлементыРедактируемойФормыГруппаИмя" id="164">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Элементы редактируемой формы группа имя</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Элементы редактируемой формы группа имя</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>InCell</Group>
+															<ExtendedTooltip name="ЭлементыРедактируемойФормыГруппаИмяРасширеннаяПодсказка" id="165"/>
+															<ChildItems>
+																<PictureField name="ЭлементыРедактируемойФормыКартинка" id="158">
+																	<DataPath>ЭлементыРедактируемойФормы.Картинка</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ЭлементыРедактируемойФормыКартинкаКонтекстноеМеню" id="159"/>
+																	<ExtendedTooltip name="ЭлементыРедактируемойФормыКартинкаРасширеннаяПодсказка" id="160"/>
+																</PictureField>
+																<InputField name="ЭлементыРедактируемойФормыИмя" id="161">
+																	<DataPath>ЭлементыРедактируемойФормы.Имя</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="ЭлементыРедактируемойФормыИмяКонтекстноеМеню" id="162"/>
+																	<ExtendedTooltip name="ЭлементыРедактируемойФормыИмяРасширеннаяПодсказка" id="163"/>
+																</InputField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</Page>
 									</ChildItems>
@@ -467,6 +532,45 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ЭлементыРедактируемойФормы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элементы редактируемой формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Картинка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>

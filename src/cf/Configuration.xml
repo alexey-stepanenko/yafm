@@ -361,10 +361,17 @@
             <CommonPicture>КоллекцияДляПомеченныхНаУдалениеОбъектов</CommonPicture>
             <CommonPicture>Контрагент</CommonPicture>
             <CommonPicture>Копировать</CommonPicture>
+            <CommonPicture>МФГруппаФормы</CommonPicture>
+            <CommonPicture>МФДекорацияФормы</CommonPicture>
+            <CommonPicture>МФКнопкаФормы</CommonPicture>
+            <CommonPicture>МФКоманднаяПанель</CommonPicture>
             <CommonPicture>МФКоманды</CommonPicture>
             <CommonPicture>МФМетаданныеОбщие</CommonPicture>
             <CommonPicture>МФМодули</CommonPicture>
+            <CommonPicture>МФПолеФормы</CommonPicture>
             <CommonPicture>МФРеквизиты</CommonPicture>
+            <CommonPicture>МФТаблицаФормы</CommonPicture>
+            <CommonPicture>МФФормы</CommonPicture>
             <CommonPicture>МФЭлементы</CommonPicture>
             <CommonPicture>ОткрытьХранимыйФайл</CommonPicture>
             <CommonPicture>ОтправитьСМС</CommonPicture>

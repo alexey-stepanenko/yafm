@@ -40,6 +40,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФЭлементы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФРеквизиты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФМодули</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФТаблицаФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФПолеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФКнопкаФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФДекорацияФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФГруппаФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МФКоманднаяПанель</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
