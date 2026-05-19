@@ -138,11 +138,39 @@
 											<ChildItems>
 												<Table name="ЭлементыРедактируемойФормы" id="145">
 													<Representation>Tree</Representation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
 													<Header>false</Header>
 													<AutoInsertNewRow>true</AutoInsertNewRow>
 													<EnableStartDrag>true</EnableStartDrag>
 													<EnableDrag>true</EnableDrag>
 													<DataPath>ЭлементыРедактируемойФормы</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>CancelSearch</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>Find</ExcludedCommand>
+														<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+														<ExcludedCommand>HierarchicalList</ExcludedCommand>
+														<ExcludedCommand>List</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>OutputList</ExcludedCommand>
+														<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+														<ExcludedCommand>SelectAll</ExcludedCommand>
+														<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+														<ExcludedCommand>SortListAsc</ExcludedCommand>
+														<ExcludedCommand>SortListDesc</ExcludedCommand>
+														<ExcludedCommand>Tree</ExcludedCommand>
+													</CommandSet>
+													<SearchStringLocation>None</SearchStringLocation>
+													<ViewStatusLocation>None</ViewStatusLocation>
+													<SearchControlLocation>None</SearchControlLocation>
 													<ContextMenu name="ЭлементыРедактируемойФормыКонтекстноеМеню" id="146"/>
 													<AutoCommandBar name="ЭлементыРедактируемойФормыКоманднаяПанель" id="147"/>
 													<ExtendedTooltip name="ЭлементыРедактируемойФормыРасширеннаяПодсказка" id="148"/>
@@ -189,12 +217,14 @@
 															<ChildItems>
 																<PictureField name="ЭлементыРедактируемойФормыКартинка" id="158">
 																	<DataPath>ЭлементыРедактируемойФормы.Картинка</DataPath>
+																	<ReadOnly>true</ReadOnly>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ЭлементыРедактируемойФормыКартинкаКонтекстноеМеню" id="159"/>
 																	<ExtendedTooltip name="ЭлементыРедактируемойФормыКартинкаРасширеннаяПодсказка" id="160"/>
 																</PictureField>
 																<InputField name="ЭлементыРедактируемойФормыИмя" id="161">
 																	<DataPath>ЭлементыРедактируемойФормы.Имя</DataPath>
+																	<ReadOnly>true</ReadOnly>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 																	<ContextMenu name="ЭлементыРедактируемойФормыИмяКонтекстноеМеню" id="162"/>
